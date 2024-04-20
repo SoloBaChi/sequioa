@@ -1,16 +1,19 @@
+/* Import Tailwind Css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {}
-
-
-body {
-
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
