@@ -40,6 +40,7 @@ body {
   background: var(--white-bg);
   color: var(--black-color);
   counter-reset: count;
+  overflow-x: hidden;
 }
 .cta-btn,
 button {

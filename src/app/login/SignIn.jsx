@@ -1,10 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import GoogleIcon from "../components/icons/GoogleIcon";
 import EyeIcon from "../components/icons/EyeIcon";
 
-function Login(props) {
+function SignIn(props) {
   const [showPassword, setShowPassword] = useState(false);
   const handlPassword = () => {
     setShowPassword((prev) => !prev);
@@ -63,7 +62,7 @@ function Login(props) {
             <div className="cta-btn-container">
               <button className="google-btn">
                 <span className="text-[1rem] xl:text-[1.125rem]">
-                  Sign with Google
+                  Sign in with Google
                 </span>
               </button>
             </div>
@@ -71,7 +70,7 @@ function Login(props) {
           <div className="form-field inner-flex">
             <p>
               Need an account{" "}
-              <Link href="" className="text-[1rem] xl:text-[1.125rem]">
+              <Link href="/register" className="text-[1rem] xl:text-[1.125rem]">
                 create one
               </Link>
             </p>
@@ -82,4 +81,4 @@ function Login(props) {
   );
 }
 
-export default Login;
+export default SignIn;

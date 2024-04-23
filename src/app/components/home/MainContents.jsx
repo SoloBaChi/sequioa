@@ -4,8 +4,8 @@ import PlayIcon from "../icons/PlayIcon";
 
 function MainContents(props) {
   return (
-    <section className="main-section relative top-[-90px]">
-      <div className="container-banner-section">
+    <div className="main-section">
+      <section className="container-banner-section relative top-[-80px]">
         <div className="flex-container-2">
           <div className="flex-item">
             <div className="img-container relative">
@@ -36,7 +36,7 @@ function MainContents(props) {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="container-countup-animation">
         <div className="grid-container">
           <grid className="item"></grid>
@@ -45,18 +45,50 @@ function MainContents(props) {
         </div>
       </div>
       <div className="become-investor-container relative">
-        <div className="flex-wrapper">
-          <div className="flex-container-2">
-            <div className="flex-item relative top-[25px] z-[1]">
-              <div className="img-container">
-                <img src={`/assets/become-an-investor.svg`} alt="investor" />
+        <div className="flex-container-2">
+          <div className="flex-item">
+            <div className="img-container">
+              <img src={`/assets/become-an-investor.svg`} alt="investor" />
+            </div>
+          </div>
+          <div className="flex-item howto-section">
+            <div className="inner-wrapper">
+              <h4 className="text-[1.675rem] xl:text-[2rem]">
+                How to Become an investor
+              </h4>
+              <p className="text-center">
+                How to earn from trading while you just sit and become wealthier
+              </p>
+              <div className="list-container">
+                <ul className="list-items">
+                  <li className="flex-container-2">
+                    <span className="list">1</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
+                      arcu placerat.
+                    </p>
+                  </li>
+                  <li className="flex-container-2">
+                    <span className="list">2</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
+                      arcu placerat.
+                    </p>
+                  </li>
+                  <li className="flex-container-2">
+                    <span className="list">3</span>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
+                      arcu placerat.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div className="flex-item h-[_100%] w-[_80%] absolute top-0 right-0 z-[-1]"></div>
           </div>
         </div>
       </div>
-      <div className="support-container flex">
+      <section className="support-container flex">
         <div className="flex-wrapper m-auto text-center flex items-start justify-end">
           <div className="flex-item">
             <div className="img-container">
@@ -72,8 +104,8 @@ function MainContents(props) {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

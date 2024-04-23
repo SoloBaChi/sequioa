@@ -7,7 +7,7 @@
   height: 580px; */
   position: relative;
   /* height: 580px; */
-  height: 440px;
+  height: 480px;
   padding: 1.5rem 0 1.5rem 5%;
   z-index: 1010;
 }
@@ -91,13 +91,14 @@
 }
 
 /* =================main contents styles=========== */
+
 /* .main-section .become-investor-container .flex-container-2 {
   align-items: baseline;
 }
 .main-section .become-investor-container .flex-container-2 > * {
   border: 1px solid;
 } */
-.main-section {
+.main-section .container-banner-section {
   z-index: 1020;
 }
 .main-section .container-banner-section .cta-btn {
@@ -126,21 +127,93 @@
   align-items: flex-start;
 }
 
-.main-section .become-investor-container .flex-container-2 > *:last-child {
-  background: linear-gradient(256.64deg, #001927 53.38%, #e9873b 81.61%);
+/*================How to become an investor=============== */
+.main-section .become-investor-container {
   /* border: 1px solid red; */
+  position: relative;
+  z-index: 1010;
+  padding: 1rem;
+}
+.main-section .become-investor-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  background: linear-gradient(45.64deg, #001927 53.38%, #e9873b 81.61%);
+}
+.main-section .become-investor-container > .flex-container-2 {
+  position: relative;
 }
 
-/* ======================How to Earn================ */
-.howto-earn-section {
-  background: #15191e;
+.main-section .become-investor-container > .flex-container-2 > * {
+  margin-left: auto;
+  /* padding: 1.5rem 1rem; */
 }
-.howto-earn-section .earning-list li {
+.main-section .become-investor-container p {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.main-section .become-investor-container .howto-section h4 {
+  color: #fff;
+  font-weight: 800;
+}
+.main-section .become-investor-container .howto-section {
+  /* border: 1px solid red; */
+  background: none;
+}
+.main-section .become-investor-container > .flex-container-2 > *:last-child {
+  /* padding: 1rem; */
+}
+
+/* ======================How to ================ */
+.howto-section {
+  background: #15191e;
+  padding: 0;
+  color: #d9d9d9;
+}
+.howto-section h4 {
+  color: #e9873b;
+  font-weight: 800;
+  text-align: center;
+}
+.howto-section > .flex-container-2 {
+  /* align-items: flex-start; */
+}
+.howto-section > .flex-container-2 > * {
+  /* padding: 1rem; */
+}
+.howto-section .list-items li {
   position: relative;
-  padding: 1rem 2.4rem;
-  /* margin-bottom: 2rem; */
-  /* list-style-position: inside; */
-  text-indent: 2rem;
+}
+.howto-section .list-items p {
+  text-align: initial;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d9d9d9;
+}
+.howto-section .list-items .list {
+  border: 1px solid #fff;
+  flex-basis: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  line-height: 65px;
+}
+.howto-section .list-items .flex-container-2 {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howto-section .list-items .flex-container-2 > *:last-child {
+  flex-basis: 72%;
 }
 
 /* ==================WHy US Styles=============== */
@@ -250,10 +323,24 @@
   .hero-section .flex-container-2::before {
     opacity: 1;
   }
+  .main-section .become-investor-container::before {
+    background: linear-gradient(256.64deg, #001927 53.38%, #e9873b 81.61%);
+    width: 75%;
+  }
+  .main-section .become-investor-container > .flex-container-2 > *:first-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: calc(55% + 4rem);
+  }
 }
 
 @media (min-width: 1200px) {
   .hero-section h2 {
     font-size: 3rem;
+  }
+  .howto-section .list-items p {
+    font-size: 1.5rem;
   }
 }

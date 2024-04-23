@@ -2,7 +2,7 @@ import React from "react";
 
 function HowToEarn(props) {
   return (
-    <section className="howto-earn-section">
+    <section className="howto-section">
       <div className="flex-container-2">
         <div className="flex-item">
           <div className="img-container">
@@ -10,9 +10,11 @@ function HowToEarn(props) {
           </div>
         </div>
         <div className="flex-item">
-          <h4>How to Earn as a Trader</h4>
-          <div className="earning-steps">
-            <ul className="earning-list">
+          <h4 className="text-[2rem] xl:text-[2.5rem]">
+            How to Earn as a Trader
+          </h4>
+          <div className="list-container">
+            <ul className="list-items">
               <li className="flex-container-2">
                 <span className="list">1</span>
                 <p>
