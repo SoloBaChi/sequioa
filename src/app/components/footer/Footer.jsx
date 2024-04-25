@@ -1,9 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import Rarrow from "../icons/Rarrow";
 import InstagramIcon from "../icons/InstagramIcon";
 import TelegramIcon from "../icons/TelegramIcon";
 import YoutubeIcon from "../icons/YoutubeIcon";
-import Link from "next/link";
 
 function Footer(props) {
   return (

@@ -3,7 +3,7 @@ Default Class Styles across all pages
 ======================================= */
 
 /* Import Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homenaje&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Rose:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 :root {
   --primary-btn: linear-gradient(90deg, #3a8d97 0%, #e9873b 100%);
@@ -40,6 +40,7 @@ body {
   background: var(--white-bg);
   color: var(--black-color);
   counter-reset: count;
+  overflow-x: hidden;
 }
 .cta-btn,
 button {
@@ -58,7 +59,10 @@ button {
 /* .cta-btn {
   border-radius: 8px;
 } */
-
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
 input,
 button {
   box-shadow: none;
@@ -81,14 +85,14 @@ p {
 }
 
 section {
-  padding: 1rem 5%;
+  padding: 1.5rem 5%;
 }
 
 /* ============Form element Stykes========= */
 .form-field {
   position: relative;
   border-radius: 5px;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2.4rem;
 }
 .form-field label {
   text-transform: capitalize;
@@ -105,14 +109,28 @@ section {
   box-shadow: none;
   outline: none;
 }
-
+.form-field .eye-icon-container,
+.form-field .icon-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
 /*============ Flex and Grid Items================ */
 .grid-container-2 > *,
+.grid-container-3 > *,
 .flex-container-2 > * {
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 980px) {
+  h2 {
+    font-size: 2.5rem;
+  }
   section {
     padding: 2rem 8%;
   }
@@ -134,7 +152,13 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.4rem;
   }
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* place-items: center; */
+  }
   .flex-container-2 > *,
+  .grid-container-3 > *,
   .grid-container-2 > * {
     margin-bottom: 0;
   }

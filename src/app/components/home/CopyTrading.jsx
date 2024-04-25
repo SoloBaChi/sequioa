@@ -1,12 +1,17 @@
 import React from "react";
-import CopyTradingText from "../text-image/CopyTradingText";
 import Link from "next/link";
 
 function CopyTrading(props) {
   return (
     <section className="copy-trading-section">
       <div className="flex-container">
-        <CopyTradingText />
+        <h2>
+          <strong>COPY TRADING</strong>
+          <br />
+          <strong>at its</strong>
+          <br />
+          <strong>FINEST</strong>
+        </h2>
         <h3>
           <strong>Humans Robots Algorithms </strong> <br />
           from around the world are here, <br />{" "}
