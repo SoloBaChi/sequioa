@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 function HeroSection(props) {
   return (
-    <section className="hero-section">
+    <section className="hero-section mt-20">
       <div className="flex-container-2">
         <div className="flex-item">
           <h2>
@@ -11,8 +12,12 @@ function HeroSection(props) {
           </h2>
           <div className="cta-btns">
             <div className="cta-btn-container">
-              <button>login</button>
-              <button className="cta-btn-primary">get started</button>
+              <Link className="cta-btn" href="/login">
+                login
+              </Link>
+              <Link href="register" className="cta-btn cta-btn-primary">
+                get started
+              </Link>
             </div>
           </div>
         </div>

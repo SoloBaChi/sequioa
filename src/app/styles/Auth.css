@@ -35,13 +35,10 @@
 }
 .auth-section .form-container {
   display: flex;
-  padding: 4rem 0rem;
+  padding: 4rem 1.2rem;
+  background: #fff;
 }
-.auth-section .form-container > * {
-  /* border: 1px solid red; */
-  margin: auto;
-  flex-basis: 72%;
-}
+
 .auth-section .form-container fieldset {
   padding: 1rem;
   position: relative;
@@ -70,11 +67,9 @@
 .auth-section .form-container button {
   border-radius: 10px;
   width: 100%;
-  /* padding: 16px 8px; */
   font-weight: 600;
   text-transform: capitalize;
   background: none;
-  /* display: inline-block; */
 }
 
 .auth-section .form-container button:not(.google-btn) {
@@ -102,8 +97,11 @@
 /* ==============Desktop Device================ */
 @media (min-width: 980px) {
   .auth-section .form-container {
-    background: #fff;
     width: 650px;
     margin: auto;
+  }
+  .auth-section .form-container > * {
+    margin: auto;
+    flex-basis: 72%;
   }
 }

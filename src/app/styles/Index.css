@@ -1,5 +1,6 @@
 /* Import Other Page Styles */
 @import url("Boilerplate.css");
+@import url("Header.css");
 @import url("Footer.css");
 @import url("Home.css");
 @import url("Auth.css");

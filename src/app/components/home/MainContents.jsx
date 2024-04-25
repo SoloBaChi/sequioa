@@ -37,12 +37,31 @@ function MainContents(props) {
           </div>
         </div>
       </section>
-      <div className="container-countup-animation">
-        <div className="grid-container">
-          <grid className="item"></grid>
-          <grid className="item"></grid>
-          <grid className="item"></grid>
-        </div>
+      <div className="countup-animation">
+        <section>
+          <div className="grid-container-3">
+            <div class="grid-item">
+              <h3>
+                <span class="counter-timer">870</span>
+                k+
+              </h3>
+              <p>investors</p>
+            </div>
+            <div class="grid-item">
+              <h3>
+                <span class="counter-timer">3.7</span>m +
+              </h3>
+              <p>invested</p>
+            </div>
+            <div class="grid-item">
+              <h3>
+                <span class="counter-timer">870</span>
+                k+
+              </h3>
+              <p>invested</p>
+            </div>
+          </div>
+        </section>
       </div>
       <div className="become-investor-container relative">
         <div className="flex-container-2">

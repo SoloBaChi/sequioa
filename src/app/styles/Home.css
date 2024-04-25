@@ -66,7 +66,7 @@
   z-index: 1010;
   overflow: hidden; */
 }
-.hero-section .flex-container-2 button {
+.hero-section .flex-container-2 .cta-btn {
   background: none;
   font-weight: 700;
   font-size: 1rem;
@@ -80,12 +80,12 @@
 .hero-section .flex-container-2 .cta-btn-container > * {
   flex-basis: 134px;
 }
-.hero-section .flex-container-2 button {
+.hero-section .flex-container-2 .cta-btn {
   border: 2px solid #3a8d97;
   border-radius: 8px;
   padding: 12px 14px;
 }
-.hero-section .flex-container-2 button.cta-btn-primary {
+.hero-section .flex-container-2 .cta-btn.cta-btn-primary {
   background: #3a8d97;
   border: none;
 }
@@ -98,6 +98,29 @@
 .main-section .become-investor-container .flex-container-2 > * {
   border: 1px solid;
 } */
+
+/* ==============Count Up Animation=============== */
+/* .countup-animation {
+  border: 1px solid red;
+} */
+.countup-animation .grid-container-3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.countup-animation .grid-container-3 h3 {
+  color: #e9873b;
+  font-weight: 400;
+  font-size: 3rem;
+  font-family: "Homenaje", sans-serif;
+}
+.countup-animation .grid-container-3 p {
+  color: rgb(0 0 0 / 40%);
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
 .main-section .container-banner-section {
   z-index: 1020;
 }
@@ -216,6 +239,89 @@
   flex-basis: 72%;
 }
 
+/* ============Why Choose Us Styles=========== */
+.why-chooseus-container {
+  /* border: 1px solid red; */
+}
+.why-chooseus-container .inner-container:nth-child(2) {
+  display: flex;
+  background: url(../../../public/assets/bg-trading-indicators.svg) no-repeat
+    top left/cover;
+}
+.why-chooseus-container .inner-container:nth-child(2) > * {
+  flex-basis: 72%;
+  margin: auto;
+}
+/* -------------second inner container--------------- */
+.why-chooseus-container .inner-container:last-child {
+  background: linear-gradient(
+    183.79deg,
+    #225775 3.11%,
+    #181c20 37.92%,
+    #111216 48.61%
+  );
+}
+
+.why-chooseus-container .inner-container:last-child .phone-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.why-chooseus-container .inner-container:last-child .phone-wrapper > * {
+  /* flex-basis: 22%;
+  margin: auto; */
+}
+.why-chooseus-container
+  .inner-container:last-child
+  .phone-wrapper
+  > *:last-child {
+  /* border: 1px solid yellow;
+  position: relative;
+  top: -20px;
+  right: 140px; */
+  position: relative;
+}
+.why-chooseus-container
+  .inner-container:last-child
+  .phone-wrapper
+  > *:first-child {
+  /* position: relative;
+  top: -20px;
+  left: 140px; */
+  position: relative;
+}
+.why-chooseus-container .inner-container:last-child .flex-container-2 > * {
+  flex-basis: auto;
+  border: 2px solid red;
+}
+.why-chooseus-container .app-downloads .flex-wrapper {
+  text-align: center;
+}
+
+.why-chooseus-container .cta-btn {
+  background: none;
+  text-transform: initial;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  color: #d9d9d9;
+  border-radius: 17px;
+  display: inline-block;
+  margin: 1rem;
+  width: 270px;
+  text-align: initial;
+}
+.why-chooseus-container .cta-btn .inner-flex {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.why-chooseus-container .cta-btn span {
+}
+.why-chooseus-container .cta-btn span::before {
+}
+
 /* ==================WHy US Styles=============== */
 .whyus-section {
   display: flex;
@@ -268,8 +374,8 @@
 
 /* ===============Copy Trading Styles============= */
 .copy-trading-section {
-  background: url("../../../public/assets/robot-woman.svg") no-repeat top
-    left/cover #15191e0d;
+  background: url("../../../public/assets/robot-woman.svg") no-repeat
+    center/cover #15191e0d;
   display: flex;
   /* justify-content: center;
   align-items: center; */
@@ -289,6 +395,48 @@
 }
 .copy-trading-section > * {
   margin: 3rem auto 0 auto;
+  flex-basis: 72%;
+}
+.copy-trading-section h2 {
+  text-transform: initial;
+  text-align: center;
+  position: relative;
+}
+.copy-trading-section h2 strong {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(
+    90deg,
+    #225775 4.87%,
+    #788586 43.76%,
+    #e9873b 81.88%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  z-index: 1010;
+}
+.copy-trading-section h2 strong:nth-child(3) {
+  text-transform: lowercase;
+}
+.copy-trading-section h2::before {
+  position: absolute;
+  content: "COPY TRADING" "\A at its" "\A  FINEST ";
+  top: 50%;
+  left: 50%;
+  z-index: 998;
+  color: #fff;
+  white-space: normal;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow:
+    -0.3125rem -0.3125rem 0 #fff,
+    0.3125rem -0.3125rem 0 #fff,
+    -0.3125rem 0.3125rem 0 #fff,
+    0.3125rem 0.3125rem 0 #fff;
 }
 .copy-trading-section h3 {
   font-family: "Poppins", sans-serif;
@@ -301,6 +449,15 @@
 }
 .copy-trading-section .flex-container > * {
   margin-top: 2.5rem;
+}
+
+/* ============================
+Tablet Device
+================================*/
+@media (min-width: 653px) {
+  .copy-trading-section h2::before {
+    white-space: pre;
+  }
 }
 
 /* =============================
@@ -323,6 +480,9 @@
   .hero-section .flex-container-2::before {
     opacity: 1;
   }
+  .countup-animation .grid-container-3 .grid-item + .grid-item {
+    border-left: 1px solid #000000;
+  }
   .main-section .become-investor-container::before {
     background: linear-gradient(256.64deg, #001927 53.38%, #e9873b 81.61%);
     width: 75%;
@@ -334,6 +494,19 @@
     height: 100%;
     width: calc(55% + 4rem);
   }
+  .why-chooseus-container
+    .inner-container:last-child
+    .phone-wrapper
+    > *:last-child {
+    top: -17px;
+    right: 140px;
+  }
+  .why-chooseus-container
+    .inner-container:last-child
+    .phone-wrapper
+    > *:first-child {
+    left: 140px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -342,5 +515,8 @@
   }
   .howto-section .list-items p {
     font-size: 1.5rem;
+  }
+  .countup-animation .grid-container-3 h3 {
+    font-size: 6rem;
   }
 }

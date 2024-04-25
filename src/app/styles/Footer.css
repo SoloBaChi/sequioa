@@ -40,6 +40,8 @@
   top: 50%;
   right: 12px;
   transform: translate(-0%, -50%);
+  height: auto;
+  width: auto;
 }
 
 /* =============Social Media icons=========== */

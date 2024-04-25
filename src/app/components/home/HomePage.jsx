@@ -4,6 +4,7 @@ import CopyTrading from "./CopyTrading";
 import HowToEarn from "./HowToEarn";
 import HeroSection from "./HeroSection";
 import MainContents from "./MainContents";
+import WhyChooseUs from "./WhyChooseUs";
 
 function HomePage(props) {
   return (
@@ -11,6 +12,7 @@ function HomePage(props) {
       <HeroSection />
       <MainContents />
       <HowToEarn />
+      <WhyChooseUs />
       <CopyTrading />
       <WhyUs />
     </>

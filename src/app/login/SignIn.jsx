@@ -60,10 +60,8 @@ function SignIn(props) {
           </div>
           <div className="form-field">
             <div className="cta-btn-container">
-              <button className="google-btn">
-                <span className="text-[1rem] xl:text-[1.125rem]">
-                  Sign in with Google
-                </span>
+              <button className="google-btn text-[1rem] xl:text-[1.125rem]">
+                <span>Sign in with Google</span>
               </button>
             </div>
           </div>
