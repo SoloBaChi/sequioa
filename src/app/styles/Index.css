@@ -4,3 +4,6 @@
 @import url("Footer.css");
 @import url("Home.css");
 @import url("Auth.css");
+
+/* ==========Dashboard Imported Style======= */
+@import url("dashboard/DashboardHome.css");

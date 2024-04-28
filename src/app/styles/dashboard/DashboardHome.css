@@ -1,0 +1,379 @@
+/* ===============Dashboard Home================= */
+
+/* ====================
+ General Styles
+========================*/
+.dashboard-container {
+  /* border: 1px solid red; */
+}
+.dashboard-container h4 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #225775;
+  text-transform: capitalize;
+  font-family: "Mulish", sans-serif;
+}
+.dashboard-container h5 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #225775;
+  font-family: "Mulish", sans-serif;
+  text-transform: capitalize;
+}
+.dashboard-container button.secondary-btn,
+.dashboard-container button.primary-btn {
+  background: #fff5e4;
+  color: #e9873b;
+  font-weight: 900;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.625rem;
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.65rem;
+  /* padding: 14px 12px; */
+}
+.dashboard-container button.secondary-btn {
+  background: #a8f5b9;
+  color: #3a8d97;
+}
+.dashboard-container .fig-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1rem 0.85rem 1rem;
+}
+/* SIDE BAR Styles */
+.dashboard-container .main-view .left-side {
+  border: 1px solid purple;
+  background: hsl(202, 100%, 8%);
+  color: #fff;
+  overflow: auto;
+  /* height: 100vh; */
+}
+.dashboard-container .left-side::-webkit-scrollbar {
+  height: 5px;
+  width: 6px;
+}
+.dashboard-container .left-side::-webkit-scrollbar-thumb {
+  background: #e3eaef;
+  border-radius: 2px;
+}
+.dashboard-container .left-side .inner-flex-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.dashboard-container .left-side .inner-flex-2 > * {
+  /* border: 1px solid yellow; */
+}
+.dashboard-container .main-view .left-side h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #3a8d97;
+  padding: 1.5rem;
+}
+.dashboard-container .main-view .left-side h3 strong {
+  font-size: 1.5rem;
+  color: #1dc0c2;
+}
+
+/* .dashboard-container .left-side .inner-flex-2 a {
+  padding: 0;
+} */
+.dashboard-container .left-side .inner-flex-2 p {
+  color: #fff;
+}
+.dashboard-container .left-side .img-icon {
+  /* flex-basis: 26px;
+  height: 24px; */
+  /* border: 1px solid red; */
+}
+.dashboard-container .left-side .top-section {
+  padding: 1rem 0.5rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* CENTER || main meu contents Styles */
+.dashboard-container .main-view .main-side {
+  background: #e3eaef;
+  padding: 1.4rem;
+}
+.dashboard-container .main-side .inner-grid-2 {
+  /* border: 1px solid red; */
+}
+.dashboard-container .main-side .form-field {
+  /* border: 1px solid red; */
+}
+.dashboard-container .main-side .form-field input {
+  border-radius: 14px;
+  border: 1px solid #e3eaef;
+  padding: 0.65rem;
+  text-indent: 3.4rem;
+  position: relative;
+}
+.dashboard-container .main-side .form-field::before {
+  content: url(../../../../public/dashboard/icons/chevron-down.svg);
+  height: 100%;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  z-index: 1;
+  border-radius: 14px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+.dashboard-container .main-side .form-field .btn-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.dashboard-container .main-side .form-field button {
+  background: none;
+}
+
+/* Main side -- Overview */
+.main-side .overview .flex-5-container {
+  border: 1px solid red;
+  /* max-width: 740px;
+  overflow: auto; */
+}
+.overview .fig-card .flex {
+  align-items: center;
+}
+.overview .fig-card .flex > * {
+  margin-bottom: 1rem;
+}
+.main-side .overview .flex-5 {
+  border: 1px solid teal;
+  /* width: 1200px; */
+}
+.main-side .overview .account h5 {
+  color: #931b1b;
+}
+.main-side .overview .account h6 {
+  font-weight: 400;
+  font-size: 1.625rem;
+  color: #225775;
+  margin: 1rem;
+}
+.main-side .overview .account p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #77838f;
+}
+.main-side .overview .icon-container {
+  background: #f1eeff;
+  padding: 0.2rem;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+}
+.main-side .overview .icon-container > * {
+  margin: auto;
+}
+.main-side .overview .trading-account .icon-container {
+  background: rgb(168 245 185/46%);
+}
+
+/* ---------totatal balance--- */
+.main-side .overview .total-balance > * {
+  /* border: 1px solid red; */
+}
+.main-side .overview .total-balance .icon-container {
+  background: #e5fcfc;
+}
+/* .main-side .overview .total-balance .amount-container > * {
+  border: 1px solid red;
+  align-items: baseline;
+} */
+.main-side .overview .total-balance .cta-btn-container {
+  /* display: flex;
+  gap: 2%; */
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.main-side .overview .total-balance button {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 0.5rem;
+}
+.main-side .overview .total-balance button:first-child {
+  background: #e5fcfc;
+  color: #225775;
+}
+.main-side .overview .total-balance button:nth-child(2) {
+  color: #8c5f08;
+  background: #fff5e4;
+}
+.main-side .overview .total-balance button:last-child {
+  background: #fcd5d5;
+  color: #931b1b;
+}
+
+/* -----------trading account */
+
+.main-side .overview .flex-5 > * {
+  margin-bottom: 1.5rem;
+}
+
+/* ----------Leaderboard styles------------ */
+/* ============Trading Leaderboard Styles======== */
+.main-side .trading-leaderboard h4 {
+  font-family: "Mulish", sans-serif;
+}
+
+.main-side .trading-leaderboard .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main-side .trading-leaderboard .flex-container span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #225775;
+  font-family: "Mulish", sans-serif;
+}
+.trading-leaderboard .table-container {
+  /* margin: 2rem 0; */
+  padding: 0rem;
+  max-width: 780px;
+  overflow: auto;
+  box-shadow: 0px 2px 13.86px 0px #0000000a;
+  background: #ffffff;
+  border-radius: 14px;
+}
+.trading-leaderboard .table-element {
+  width: 1200px;
+  border-collapse: collapse;
+}
+.trading-leaderboard .table-container::-webkit-scrollbar {
+  background: transparent;
+  border-radius: 6px;
+  width: 10px;
+  height: 6px;
+}
+.trading-leaderboard .table-container::-webkit-scrollbar {
+  background: #b5b5b5;
+  border-radius: 2px;
+}
+.trading-leaderboard .table-container th {
+  color: #77838f;
+  font-size: 0.875rem;
+}
+.trading-leaderboard .table-container td,
+.trading-leaderboard .table-container th {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e8eaf0;
+  vertical-align: middle;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+}
+.trading-leaderboard .table-container td {
+  font-size: 1rem;
+}
+.trading-leaderboard .table-container td:not(.profit) {
+  color: #225775;
+}
+
+/* 
+=================================
+=================================
+=================================
+ */
+/* Right Side Ssbtyles  */
+.dashboard-container .main-view .right-side {
+  /* border: 1px solid red; */
+}
+
+/* =================================
+Desktop Device
+====================================*/
+@media (min-width: 980px) {
+  .dashboard-container .grid-2 {
+    /* grid-template-columns: repeat(1, fit-content(250px) 2fr fit-content(386px)) / auto-flow; */
+    /* grid-template-columns: repeat(1, fit-content(250px) 1fr fit-content(386px)); */
+    /* grid-template-columns: repeat(
+      1,
+      minmax(0, 250px) minmax(0, 1fr) minmax(0, 380px)
+    ); */
+    display: grid;
+    grid-template-columns: repeat(1, fit-content(251px) 1fr);
+    /* gap: 1.2rem; */
+  }
+
+  /* Main Side styles */
+  .dashboard-container .main-side .inner-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr fit-content(286px));
+    gap: 1.2rem;
+    /* border: 2px solid red; */
+  }
+  .dashboard-container .main-side .inner-grid-2 > * {
+    /* border: 2px solid red; */
+  }
+  /* Main side -- Overview */
+  .main-side .overview .flex-5 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4%;
+    align-items: center;
+  }
+  .main-side .overview .flex-5 > * {
+    flex-basis: 22%;
+    /* margin-bottom: 0; */
+    /* height: 155px; */
+  }
+  .main-side .overview .flex-5 > *:nth-child(2) {
+    flex-basis: 48%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(4) {
+    flex-basis: 48%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(5) {
+    flex-basis: 48%;
+  }
+}
+
+/* =================================
+Desktop Device || Large
+====================================*/
+@media (min-width: 1200px) {
+  .dashboard-container .main-view .left-side {
+    /* overflow: auto;
+    height: auto; */
+  }
+  .dashboard-container .main-side .inner-grid-2 {
+    grid-template-columns: repeat(1, 1fr fit-content(386px));
+  }
+
+  /* -----leaderboard styles */
+
+  .trading-leaderboard .table-container {
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .trading-leaderboard .table-element {
+    width: 100%;
+  }
+}
