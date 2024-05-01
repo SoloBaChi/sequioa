@@ -18,7 +18,7 @@ function DashboardHome(props) {
           </div>
         </div>
       </div>
-      <div className="container-item footer">{/* <Footer /> */}</div>
+      {/* <div className="container-item footer">Yes</div> */}
     </div>
   );
 }
