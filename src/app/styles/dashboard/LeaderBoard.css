@@ -1,0 +1,15 @@
+/* DashBoard || LeaderBoard Styles */
+.leaderboard .table-container {
+  max-width: 820px;
+}
+
+
+
+/* ==================================
+  Desktop Device
+=====================================*/
+@media (min-width: 980px) {
+  .leaderboard .table-element {
+    width: 100%;
+  }
+}

@@ -18,7 +18,7 @@ function MainMenu(props) {
   return (
     <div className="inner-grid-2">
       <div className="grid-item">
-        <div className="form-container">
+        <div className="search-menu">
           <Search />
         </div>
         <div className="overview">
@@ -182,35 +182,42 @@ function MainMenu(props) {
                       </div>
                     </div>
                     <div className="trade-summary-chart">
-                      <div className="flex flex-row flex-wrap gap-[4%] flex-2">
-                        <div className="flex-item basis-[22%]">
+                      <div className="flex flex-2">
+                        <div className="flex-item">
                           <h6>udezueFx</h6>
                           <h6>chetaFunds</h6>
                           <h6>johnFunded</h6>
                         </div>
-                        <div className="flex-item basis-[72%]">
-                          <div className="grid grid-cols-7">
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#dfdfdf]"></div>
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#dfdfdf]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#dfdfdf]"></div>
-                            <div className="box bg-[#ffbdbd]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
-                            <div className="box bg-[#a8f5b9]"></div>
+                        <div className="flex-item">
+                          <div className="grid grid-cols-7 gap-1">
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#dfdfdf]"></figure>
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#dfdfdf]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#dfdfdf]"></figure>
+                            <figure className="box bg-[#ffbdbd]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <figure className="box bg-[#a8f5b9]"></figure>
+                            <p className="current-day">M</p>
+                            <p className="current-day">T</p>
+                            <p className="current-day">W</p>
+                            <p className="current-day">T</p>
+                            <p className="current-day">F</p>
+                            <p className="current-day">S</p>
+                            <p className="current-day">S</p>
                           </div>
                         </div>
                       </div>
@@ -221,7 +228,7 @@ function MainMenu(props) {
             </div>
           </div>
         </div>
-        <div className="trading-leaderboard">
+        <div className="leaderboard-container">
           <TradingLeaderBoard />
         </div>
       </div>

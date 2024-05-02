@@ -4,7 +4,7 @@ import DownArrowIcon from "../components/icons/DownArrowIcon";
 
 function TradingLeaderBoard(props) {
   return (
-    <>
+    <div className="trading-leaderboard">
       <h4 className="mb-4">trading leaderboard</h4>
       <div className="table-container">
         <table className="table-element">
@@ -115,7 +115,7 @@ function TradingLeaderBoard(props) {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 }
 

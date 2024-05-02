@@ -1,15 +1,11 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import SideMenu from "./SideMenu";
-import MainMenu from "./MainMenu";
+import MainMenu from "../../MainMenu";
+import SideMenu from "../../SideMenu";
 
-function DashboardHome(props) {
+function UserId(props) {
   return (
-    <div className="dashboard-container">
-      <div className="container-item">
-        <Header />
-      </div>
+    <div className="dashboard-container copy-trader">
+      <div className="container-item">{/* <Header /> */}</div>
       <div className="main-view">
         <div className="grid-2">
           <div className="side-menu">
@@ -25,4 +21,4 @@ function DashboardHome(props) {
   );
 }
 
-export default DashboardHome;
+export default UserId;

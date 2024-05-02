@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function SideMenu(props) {
   return (
-    <div className="side-menu">
+    <div className="side-menu-container">
       <h3>
         welcome <strong>Cheta !</strong>
       </h3>
@@ -33,7 +33,7 @@ function SideMenu(props) {
               </Link>
             </li>
             <li className="list-item">
-              <Link href="#" className="inner-flex-2">
+              <Link href="/dashboard/copytrading" className="inner-flex-2">
                 <div className="img-icon">
                   <img
                     src={`/dashboard/icons/copy-trading-path-icon.svg`}
@@ -55,7 +55,7 @@ function SideMenu(props) {
               </Link>
             </li>
             <li className="list-item">
-              <Link href="#" className="inner-flex-2">
+              <Link href="/dashboard/leaderboard" className="inner-flex-2">
                 <div className="img-icon">
                   <img
                     src={`/dashboard/icons/leaderboard-icon.svg`}

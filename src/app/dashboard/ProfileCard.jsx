@@ -9,7 +9,7 @@ import Link from "next/link";
 
 function ProfileCard(props) {
   return (
-    <figure>
+    <figure className="profile-card">
       <div className="top-section">
         <div className="flex-2">
           <div className="flex-item">
@@ -63,71 +63,71 @@ function ProfileCard(props) {
         <div className="flex-6">
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img src={`/dashboard/icons/risk-icon.svg`} alt="" />
+              </div>
               <div className="text-wrapper">
                 <h5>Risk Score</h5>
                 <p className="text-[#E2413B]">8.0</p>
               </div>
-              {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/risk-icon.svg`} alt="" />
-                    </div> */}
             </button>
           </div>
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img src={`/dashboard/icons/average-rio.svg`} alt="" />
+              </div>
               <div className="text-wrapper">
                 <h5>average rio</h5>
                 <p className="text-[#E9873B]">$400</p>
               </div>
-              {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/average-rio.svg`} alt="" />
-                    </div> */}
             </button>
           </div>
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img src={`/dashboard/icons/fees-icon.svg`} alt="" />
+              </div>
               <div className="text-wrapper">
                 <h5>fees</h5>
                 <p className="text-[#E9873B]">15.5%</p>
               </div>
-              {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/fees-icon.svg`} alt="" />
-                    </div> */}
             </button>
           </div>
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img src={`/dashboard/icons/assets-type.svg`} alt="" />
+              </div>
               <div className="text-wrapper">
                 <h5>asset type</h5>
                 <p className="text-[#E9873B]">00</p>
               </div>
-              {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/assets-type.svg`} alt="" />
-                    </div> */}
             </button>
           </div>
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img
+                  src={`/dashboard/icons/min-deposit-icon.svg`}
+                  alt="deposit"
+                />
+              </div>
               <div className="text-wrapper">
                 <h5>minimum deposit</h5>
                 <p className="text-[#E9873B]">$1,000</p>
               </div>
-              {/* <div className="icon-container">
-                      <img
-                        src={`/dashboard/icons/min-deposit-icon.svg`}
-                        alt="deposit"
-                      />
-                    </div> */}
             </button>
           </div>
           <div className="flex-item">
             <button className="primary-btn">
+              <div className="icon-container">
+                <img src={`/dashboard/icons/bank-icon.svg`} alt="" />
+              </div>
               <div className="text-wrapper">
                 <h5>total assets managed</h5>
                 <p className="text-[#E9873B]">$198,00</p>
               </div>
-              {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/average-rio.svg`} alt="" />
-                    </div> */}
             </button>
           </div>
         </div>
