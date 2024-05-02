@@ -44,7 +44,7 @@
 }
 /* SIDE BAR Styles */
 .dashboard-container .main-view .left-side {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   background: hsl(202, 100%, 8%);
   color: #fff;
   overflow: auto;
@@ -227,9 +227,65 @@
 }
 
 /* -----------trading account */
-
 .main-side .overview .flex-5 > * {
   margin-bottom: 1.5rem;
+}
+
+/* ===============Trading Summary and Portfolio================== */
+.main-side .trading-details {
+  padding: 1rem 1.5rem;
+}
+.main-side .trading-details h4 {
+  font-weight: 600;
+  font-size: 0.9735rem;
+  color: #77838f;
+  font-family: "Poppins", sans-serif;
+}
+.main-side .trading-details h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e2413b;
+  font-family: "Mulish", sans-serif;
+}
+.main-side .trading-details h6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #77838f;
+  text-transform: capitalize;
+}
+.main-side .trading-details .perce {
+  color: #225775;
+  font-weight: 600;
+  font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-side .copy-trading .flex-3 .flex-item > * {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.main-side .copy-trading .flex-3 .flex-item > *:last-child {
+  margin-bottom: 0;
+}
+.main-side .trade-summary p {
+  color: #77838f;
+  font-size: 0.785rem;
+}
+.main-side .trade-summary-chart .flex-2 {
+  align-items: flex-start;
+  gap: 4%;
+}
+.main-side .trade-summary-chart .flex-2 .flex-item > * {
+  margin-bottom: 1rem;
+}
+.main-side .trade-summary-chart .flex-2 > *:last-child {
+  margin-left: auto;
+}
+.main-side .trade-summary-chart .box {
+  width: 34px;
+  height: 26px;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  /* background: #a8f5b9; */
 }
 
 /* ----------Leaderboard styles------------ */
@@ -252,6 +308,7 @@
 .trading-leaderboard .table-container {
   /* margin: 2rem 0; */
   padding: 0rem;
+  max-width: 420px;
   max-width: 780px;
   overflow: auto;
   box-shadow: 0px 2px 13.86px 0px #0000000a;
@@ -259,7 +316,8 @@
   border-radius: 14px;
 }
 .trading-leaderboard .table-element {
-  /* width: 1200px; */
+  width: 1200px;
+  /* border: 1px solid red; */
   border-collapse: collapse;
 }
 .trading-leaderboard .table-container::-webkit-scrollbar {
@@ -304,10 +362,14 @@
 .dashboard-container .main-view .right-side {
   /* border: 1px solid red; */
 }
-/* Right Side Section styles */
+/*=========================
+ Right Side Section styles 
+ ===========================
+ */
 /* -------section one ----------- */
+
 .dashboard-container .grid-item .section-one {
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 2px 13.86px 0px #0000000a;
@@ -330,13 +392,29 @@
   font-size: 0.7875rem;
   font-weight: 600;
 }
-.dashboard-container .grid-item .section-one button .text {
-  /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-  /* text-indent: 6.5rem; */
+.dashboard-container
+  .grid-item
+  .section-one
+  .top-section
+  .flex-2
+  > :last-child {
+  background: #225775;
+  padding: 1.5rem;
+  color: #fff;
+}
+.dashboard-container
+.grid-item
+.section-one
+.top-section
+.flex-2
+> :first-child
+.img-container {
+position: relative;
 }
 
+.dashboard-container .grid-item .section-one .middle-section {
+  padding: 1rem;
+}
 .dashboard-container .grid-item .section-one .middle-section button::before {
   /* position: absolute;
     display: block;
@@ -364,6 +442,16 @@
   border-radius: 8px;
   margin-right: 1rem; */
 }
+.dashboard-container .grid-item .section-one .bottom-section {
+  margin-top: 2rem;
+}
+.dashboard-container .grid-item .section-one .bottom-section a {
+  padding: 0;
+}
+.dashboard-container .grid-item .section-one .bottom-section h5 {
+  font-weight: 600;
+}
+/* --------Other Styles for bottom section were done with tailwindcss--------- */
 
 /* --------section two--------- */
 .dashboard-container .grid-item .section-two {
@@ -459,21 +547,15 @@ Desktop Device
   }
   .main-side .overview .flex-5 > *:nth-child(4) {
     order: 4;
+    flex-basis: 100%;
   }
   .main-side .overview .flex-5 > *:nth-child(5) {
     order: 5;
+    flex-basis: 100%;
   }
 
   /* ---------------Right side styles---------------- */
   .dashboard-container .grid-item .section-one .top-section {
-    /* background: #225775;
-    color: #fff;
-    display: flex;
-    position: relative;
-    width: 274px;
-    height: 147px;
-    margin-left: auto;
-    font-family: "Poppins", sans-serif; */
   }
   .dashboard-container .grid-item .section-one .top-section .flex-2 {
     display: flex;
@@ -535,10 +617,7 @@ Desktop Device
     > :last-child {
     flex-basis: 274px;
     margin-left: auto;
-    background: #225775;
     height: 147px;
-    padding: 1.5rem;
-    color: #fff;
     display: flex;
   }
   .dashboard-container
@@ -617,10 +696,13 @@ Desktop Device
     flex-flow: row wrap;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem; */
+    gap: 2rem; */
   }
   .dashboard-container .grid-item .section-one .middle-section .flex-6 > * {
     flex-basis: 48%;
+  }
+  .trading-leaderboard .table-container {
+    max-width: 420px;
   }
 }
 

@@ -1,32 +1,25 @@
 import React from "react";
-import SearchIcon from "../components/icons/SearchIcon";
 import TradingAccountIcon from "../components/icons/TradingAccountIcon";
-
 import TradingLeaderBoard from "./TradingLeaderBoard";
 import StarIcon from "../components/icons/StarIcon";
 import WalletIcon from "../components/icons/WalletIcon";
 import AccountBalanceIcon from "../components/icons/AccountBalanceIcon";
 import DepositIcon from "../components/icons/DepositIcon";
 import InvestIcon from "../components/icons/InvestIcon";
-import CopyIcon from "../components/icons/CopyIcon";
 import RiskIcon from "../components/icons/RiskIcon";
-import AvatarIcon from "../components/icons/AvatarIcon";
+
+import ProfileCard from "./ProfileCard";
+import Referral from "./Referral";
+import Search from "./Search";
+import DownArrowIcon from "../components/icons/DownArrowIcon";
+import ProgressBar from "./ProgressBar";
 
 function MainMenu(props) {
   return (
     <div className="inner-grid-2">
       <div className="grid-item">
         <div className="form-container">
-          <form>
-            <div className="form-field">
-              <input type="search" placeholder="Search..." />
-              <div className="btn-container">
-                <button>
-                  <SearchIcon />
-                </button>
-              </div>
-            </div>
-          </form>
+          <Search />
         </div>
         <div className="overview">
           <h4>overview</h4>
@@ -117,179 +110,127 @@ function MainMenu(props) {
                 </figure>
               </div>
               <div className="flex-item">
-                <figure className="fig-card trading-account">
-                  <div className="top-section flex">
+                <figure className="fig-card trading-details copy-trading">
+                  <div className="top-section flex justify-between">
                     <div className="flex-item">
-                      <h5>copy trading portfolio</h5>
+                      <h4>copy trading portfolio</h4>
                     </div>
-                    <div className="flex-item"></div>
+                    <div className="flex-item flex">
+                      <h5>25%</h5>
+                      <span className="arrow-down">
+                        <DownArrowIcon />
+                      </span>
+                    </div>
                   </div>
-                  <div className="bottom-section"></div>
+                  <div className="bottom-section">
+                    <div className="flex flex-3 flex-row items-center justify-center gap-[4%]">
+                      <div className="flex-item basis-[22%]">
+                        <h6>udezueFx</h6>
+                        <h6>chetaFunds</h6>
+                        <h6>johnFunded</h6>
+                        <h6>chibuezeFx</h6>
+                        <h6>development</h6>
+                      </div>
+                      <div className="flex-item basis-[48%] ">
+                        <p>
+                          <ProgressBar val="40" max="100" />
+                        </p>
+                        <p>
+                          <ProgressBar val="60" max="100" />
+                        </p>
+                        <p>
+                          <ProgressBar val="30" max="100" />
+                        </p>
+                        <p>
+                          <ProgressBar val="40" max="100" />
+                        </p>
+                        <p>
+                          <ProgressBar val="90" max="100" />
+                        </p>
+                      </div>
+                      <div className="flex-item basis-[22%] ml-auto">
+                        <p className="perce">40%</p>
+                        <p className="perce">20%</p>
+                        <p className="perce">60%</p>
+                        <p className="perce">90%</p>
+                        <p className="perce">15%</p>
+                      </div>
+                    </div>
+                  </div>
                 </figure>
               </div>
               <div className="flex-item">
-                <figure className="fig-card trading-account">
+                <figure className="fig-card trading-details trade-summary">
                   <div className="top-section flex">
                     <div className="flex-item">
-                      <h5>trade summary</h5>
+                      <h4>trade summary</h4>
                     </div>
                   </div>
-                  <div className="bottom-section"></div>
+                  <div className="bottom-section">
+                    <div className="flex flex-row gap-4 justify-end items-end">
+                      <div className="flex-item flex gap-1 items-baseline">
+                        <p>Loss</p>
+                        <span className="inline-block bg-[#ffbdbd] w-[24px] h-[6px]"></span>
+                      </div>
+                      <div className="flex-item flex gap-1 items-baseline">
+                        <p>No Trade</p>
+                        <span className="inline-block bg-[#dfdfdf] w-[24px] h-[6px]"></span>
+                      </div>
+                      <div className="flex-item flex gap-1 items-baseline">
+                        <p>Profit</p>
+                        <span className="inline-block bg-[#a8f5b9] w-[24px] h-[6px]"></span>
+                      </div>
+                    </div>
+                    <div className="trade-summary-chart">
+                      <div className="flex flex-row flex-wrap gap-[4%] flex-2">
+                        <div className="flex-item basis-[22%]">
+                          <h6>udezueFx</h6>
+                          <h6>chetaFunds</h6>
+                          <h6>johnFunded</h6>
+                        </div>
+                        <div className="flex-item basis-[72%]">
+                          <div className="grid grid-cols-7">
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#dfdfdf]"></div>
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#dfdfdf]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#dfdfdf]"></div>
+                            <div className="box bg-[#ffbdbd]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                            <div className="box bg-[#a8f5b9]"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </figure>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className="trading-leaderboard">
+        <div className="trading-leaderboard">
           <TradingLeaderBoard />
-        </div> */}
-        <div className="just-checking">1</div>
+        </div>
       </div>
       <div className="grid-item">
         <div className="section-one">
-          <figure>
-            <div className="top-section">
-              <div className="flex-2">
-                <div className="flex-item">
-                  <div className="img-container">
-                    <img
-                      src={`/dashboard/images/profile-img.svg`}
-                      alt="user profile"
-                    />
-                  </div>
-                </div>
-                <div className="flex-item">
-                  <div className="text-wrapper">
-                    <div className="flex-container-2">
-                      <div className="flex-item">
-                        <div className="icon-container">
-                          <AvatarIcon />
-                        </div>
-                      </div>
-                      <div className="flex-item">
-                        <h3>ChetaFx_001</h3>
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Eu commodo lacus
-                      sed enim cras eu eu vulputate. Semper massa ut ut amet.
-                      Pharetra purus quis ac duis sed consectetur molestie ipsum
-                      convallis. Scelerisque facilisis feugiat neque pulvinar.
-                    </p>
-                    <hr />
-                  </div>
-                </div>
-              </div>
-              <div className="other-resources border border-blue-800">
-                <div className="">
-                  <div className="flex-item">
-                    <div className="icon-container"></div>
-                    <h5>Human</h5>
-                  </div>
-                  <div className="flex-item">
-                    <div className="icon-container"></div>
-                    <h5>426 inestors</h5>
-                  </div>
-                  <div className="flex-item">
-                    <div className="icon-container"></div>
-                    <h5>Joined mar 2023</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="middle-section relative">
-              <div className="flex-6">
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>Risk Score</h5>
-                      <p className="text-[#E2413B]">8.0</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/risk-icon.svg`} alt="" />
-                    </div> */}
-                  </button>
-                </div>
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>average rio</h5>
-                      <p className="text-[#E9873B]">$400</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/average-rio.svg`} alt="" />
-                    </div> */}
-                  </button>
-                </div>
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>fees</h5>
-                      <p className="text-[#E9873B]">15.5%</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/fees-icon.svg`} alt="" />
-                    </div> */}
-                  </button>
-                </div>
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>asset type</h5>
-                      <p className="text-[#E9873B]">00</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/assets-type.svg`} alt="" />
-                    </div> */}
-                  </button>
-                </div>
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>minimum deposit</h5>
-                      <p className="text-[#E9873B]">$1,000</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img
-                        src={`/dashboard/icons/min-deposit-icon.svg`}
-                        alt="deposit"
-                      />
-                    </div> */}
-                  </button>
-                </div>
-                <div className="flex-item">
-                  <button className="primary-btn">
-                    <div className="text-wrapper">
-                      <h5>total assets managed</h5>
-                      <p className="text-[#E9873B]">$198,00</p>
-                    </div>
-                    {/* <div className="icon-container">
-                      <img src={`/dashboard/icons/average-rio.svg`} alt="" />
-                    </div> */}
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="bottom-section"></div>
-          </figure>
+          <ProfileCard />
         </div>
         <div className="section-two">
-          <div className="flex-wrapper">
-            <div className="img-container">
-              <img
-                src={`/dashboard/images/refer-earn.svg`}
-                alt="refer and earn"
-              />
-            </div>
-            <div className="cta-btn-container">
-              <button className="primary-btn">
-                <div>
-                  <CopyIcon />
-                </div>
-                <span>copy</span>
-              </button>
-            </div>
-          </div>
+          <Referral />
         </div>
       </div>
     </div>
