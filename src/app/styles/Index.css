@@ -4,3 +4,10 @@
 @import url("Footer.css");
 @import url("Home.css");
 @import url("Auth.css");
+
+/* ==========Dashboard Imported Style======= */
+@import url("dashboard/DashboardHome.css");
+@import url("dashboard/Progressbar.css");
+@import url("dashboard/LeaderBoard.css");
+@import url("dashboard/CopyTrading.css");
+@import url("dashboard/UserId.css");

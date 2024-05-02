@@ -1,0 +1,745 @@
+/* ===============Dashboard Home================= */
+
+/* ====================
+ General Styles
+========================*/
+.dashboard-container {
+  /* border: 1px solid red; */
+}
+.dashboard-container h4 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #225775;
+  text-transform: capitalize;
+  font-family: "Mulish", sans-serif;
+}
+.dashboard-container h5 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #225775;
+  font-family: "Mulish", sans-serif;
+  text-transform: capitalize;
+}
+.dashboard-container button.secondary-btn,
+.dashboard-container button.primary-btn {
+  background: #fff5e4;
+  color: #e9873b;
+  font-weight: 900;
+  font-family: "Mulish", sans-serif;
+  font-size: 0.625rem;
+  border-radius: 7px;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.65rem;
+  /* padding: 14px 12px; */
+}
+.dashboard-container button.secondary-btn {
+  background: #a8f5b9;
+  color: #3a8d97;
+}
+.dashboard-container .fig-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1rem 0.85rem 1rem;
+}
+
+/* ======================
+SIDE BAR MENU Styles 
+=========================*/
+.dashboard-container .side-menu {
+  /* border: 1px solid purple; */
+  background: hsl(202, 100%, 8%);
+  color: #fff;
+  overflow: auto;
+  /* height: 100vh; */
+}
+.side-menu::-webkit-scrollbar {
+  height: 5px;
+  width: 6px;
+}
+.side-menu::-webkit-scrollbar-thumb {
+  background: #e3eaef;
+  border-radius: 2px;
+}
+.side-menu .inner-flex-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.side-menu .inner-flex-2 > * {
+  /* border: 1px solid yellow; */
+}
+.side-menu h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #3a8d97;
+  padding: 1.5rem;
+}
+.side-menu h3 strong {
+  font-size: 1.5rem;
+  color: #1dc0c2;
+}
+
+/* .dashboard-container .left-side .inner-flex-2 a {
+  padding: 0;
+} */
+.side-menu .inner-flex-2 p {
+  color: #fff;
+}
+.side-menu .img-icon {
+  /* flex-basis: 26px;
+  height: 24px; */
+  /* border: 1px solid red; */
+}
+.side-menu .top-section {
+  padding: 1rem 0.5rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* CENTER || main meu contents Styles */
+.dashboard-container .main-view .main-side {
+  background: #e3eaef;
+  padding: 1.4rem;
+}
+.dashboard-container .main-side .inner-grid-2 {
+  /* border: 1px solid red; */
+}
+
+/* ============Search Menu Styles========== */
+.search-menu .form-field {
+  /* border: 1px solid red; */
+}
+.search-menu .form-field input {
+  border-radius: 14px;
+  border: 1px solid #e3eaef;
+  padding: 0.65rem;
+  text-indent: 3.4rem;
+  position: relative;
+}
+.search-menu .form-field::before {
+  content: url(../../../../public/dashboard/icons/chevron-down.svg);
+  height: 100%;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 2px;
+  z-index: 1;
+  border-radius: 14px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+.search-menu .form-field .btn-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.search-menu .form-field button {
+  background: none;
+}
+
+/* Main side -- Overview */
+.main-side .overview .flex-5-container {
+  /* border: 1px solid red; */
+  /* max-width: 740px;
+  overflow: auto; */
+}
+.overview .fig-card .flex {
+  align-items: center;
+}
+.overview .fig-card .flex > * {
+  margin-bottom: 1rem;
+}
+.main-side .overview .flex-5 {
+  /* width: 1200px; */
+}
+.main-side .overview .account h5 {
+  color: #931b1b;
+}
+.main-side .overview .account h6 {
+  font-weight: 400;
+  font-size: 1.625rem;
+  color: #225775;
+  margin: 1rem;
+}
+.main-side .overview .account p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #77838f;
+}
+.main-side .overview .icon-container {
+  background: #f1eeff;
+  padding: 0.2rem;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+}
+.main-side .overview .icon-container > * {
+  margin: auto;
+}
+.main-side .overview .trading-account .icon-container {
+  background: rgb(168 245 185/46%);
+}
+
+/* ---------total balance--- */
+.main-side .overview .total-balance > * {
+  /* border: 1px solid red; */
+}
+.main-side .overview .total-balance .icon-container {
+  background: #e5fcfc;
+}
+/* .main-side .overview .total-balance .amount-container > * {
+  border: 1px solid red;
+  align-items: baseline;
+} */
+.main-side .overview .total-balance .cta-btn-container {
+  /* display: flex;
+  gap: 2%; */
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.main-side .overview .total-balance button {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 0.5rem;
+}
+.main-side .overview .total-balance button:first-child {
+  background: #e5fcfc;
+  color: #225775;
+}
+.main-side .overview .total-balance button:nth-child(2) {
+  color: #8c5f08;
+  background: #fff5e4;
+}
+.main-side .overview .total-balance button:last-child {
+  background: #fcd5d5;
+  color: #931b1b;
+}
+
+/* -----------trading account */
+.main-side .overview .flex-5 > * {
+  margin-bottom: 1.5rem;
+}
+
+/* ===============Trading Summary and Portfolio================== */
+.main-side .trading-details {
+  padding: 1rem 1.5rem;
+}
+.main-side .trading-details h4 {
+  font-weight: 600;
+  font-size: 0.9735rem;
+  color: #77838f;
+  font-family: "Poppins", sans-serif;
+}
+.main-side .trading-details h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #e2413b;
+  font-family: "Mulish", sans-serif;
+}
+.main-side .trading-details h6 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #77838f;
+  text-transform: capitalize;
+}
+.main-side .trading-details .perce {
+  color: #225775;
+  font-weight: 600;
+  font-size: 0.85rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-side .copy-trading .flex-3 .flex-item > * {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.main-side .copy-trading .flex-3 .flex-item > *:last-child {
+  margin-bottom: 0;
+}
+.main-side .trade-summary p {
+  color: #77838f;
+  font-size: 0.785rem;
+}
+.main-side .trade-summary-chart .flex-2 {
+  display: flex;
+  align-items: start;
+  gap: 4%;
+}
+.main-side .trade-summary-chart .flex-2 > * {
+  /* border: 1px solid green; */
+}
+.main-side .trade-summary-chart .flex-2 > :last-child {
+  /* flex-basis: 72%; */
+}
+.main-side .trade-summary-chart .flex-2 .flex-item > * {
+  margin-bottom: 1rem;
+}
+.main-side .trade-summary-chart .flex-2 > *:last-child {
+  margin-left: auto;
+}
+.main-side .trade-summary-chart .box {
+  width: 28px;
+  height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+/* ----------Leaderboard styles------------ */
+/* ============Trading Leaderboard Styles======== */
+.trading-leaderboard h4 {
+  font-family: "Mulish", sans-serif;
+}
+
+.trading-leaderboard .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.trading-leaderboard .flex-container span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #225775;
+  font-family: "Mulish", sans-serif;
+}
+.trading-leaderboard .table-container {
+  /* margin: 2rem 0; */
+  padding: 0rem;
+  /* max-width: 420px; */
+  max-width: 780px;
+  overflow: auto;
+  box-shadow: 0px 2px 13.86px 0px #0000000a;
+  background: #ffffff;
+  border-radius: 14px;
+}
+.trading-leaderboard .table-element {
+  width: 1200px;
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+}
+.trading-leaderboard .table-container::-webkit-scrollbar {
+  background: transparent;
+  border-radius: 6px;
+  width: 10px;
+  height: 6px;
+}
+.trading-leaderboard .table-container::-webkit-scrollbar {
+  background: #b5b5b5;
+  border-radius: 2px;
+}
+.trading-leaderboard .table-container th {
+  color: #77838f;
+  font-size: 0.875rem;
+}
+.trading-leaderboard .table-container td,
+.trading-leaderboard .table-container th {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: left;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e8eaf0;
+  vertical-align: middle;
+  font-weight: 400;
+  font-family: "Mulish", sans-serif;
+}
+.trading-leaderboard .table-container td {
+  font-size: 1rem;
+}
+.trading-leaderboard .table-container td:not(.profit) {
+  color: #225775;
+}
+
+/* 
+=================================
+=================================
+=================================
+ */
+
+.dashboard-container .main-view .right-side {
+  /* border: 1px solid red; */
+}
+/*=========================
+ Right Side Section styles 
+ ===========================
+ */
+/* -------section one ----------- */
+/* =====================================
+ Profile Card
+========================================*/
+.profile-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 2px 13.86px 0px #0000000a;
+  margin-bottom: 1.5rem;
+  width: 386px;
+}
+.profile-card .middle-section button {
+  background: rgba(34 87 117 /6%);
+  position: relative;
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: initial;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 4%;
+  margin-bottom: 1.5rem;
+}
+.profile-card .middle-section button > * {
+  flex-basis: 22%;
+}
+.profile-card .middle-section button > :first-child {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 100%;
+  width: 45px;
+  background: #225775;
+  border-radius: 5px;
+  transform: translate(-0%, -50%);
+  padding: 0.65rem;
+}
+.profile-card .middle-section button > :last-child {
+  flex-basis: 62%;
+  margin-left: auto;
+}
+.profile-card .middle-section button h5 {
+  font-weight: 600;
+  color: #225775;
+  font-size: 0.4575rem;
+}
+.profile-card .middle-section button p {
+  font-size: 0.7875rem;
+  font-weight: 600;
+}
+.profile-card .top-section .flex-2 > :last-child {
+  background: #225775;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.profile-card .top-section .flex-2 > :first-child {
+  text-align: center;
+}
+.profile-card .top-section .flex-2 > :first-child .img-container {
+  position: relative;
+  display: inline-block;
+}
+.profile-card .top-section .flex-2 > :first-child .img-container::before {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  display: inline-block;
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  background: #3a8d97;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  content: "";
+}
+.profile-card .top-section .flex-container-2 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+.profile-card .top-section .flex-container-2 > * {
+  flex-basis: auto;
+  margin-bottom: 0;
+}
+
+.profile-card .top-section p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 0.485rem;
+  margin-bottom: 0.45rem;
+}
+.profile-card .top-section h3 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.profile-card .middle-section {
+  padding: 1rem;
+}
+.profile-card .middle-section button::before {
+  /* Nothing for now */
+}
+
+.profile-card .middle-section .icon-container {
+  /* Nothing for now */
+}
+.profile-card .bottom-section {
+  margin-top: 2rem;
+}
+.profile-card .bottom-section a {
+  padding: 0;
+}
+.profile-card .bottom-section h5 {
+  font-weight: 600;
+}
+.profile-card .middle-section .flex-6 {
+  display: flex;
+  gap: 4%;
+  flex-flow: row wrap;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; */
+}
+.profile-card .middle-section .flex-6 > * {
+  flex-basis: 48%;
+}
+/* --------Other Styles for bottom section were done with tailwindcss--------- */
+
+/* --------section two--------- */
+.dashboard-container .grid-item .section-two {
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 13.86px 0px rgba(0, 0, 0, 0.04);
+  min-width: 286px;
+  text-align: center;
+}
+.dashboard-container .grid-item .section-two button {
+  border: 1px solid rgba(206, 208, 211, 1);
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #3a8d97;
+  position: relative;
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+}
+.dashboard-container .grid-item .section-two button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 90px;
+  height: 100%;
+  background: rgba(58, 141, 151, 0.15);
+  border-radius: 0 11px 11px 0;
+}
+.dashboard-container .grid-item .section-two .img-container {
+  width: 214px;
+  display: inline-block;
+}
+
+/* =================================
+Desktop Device
+====================================*/
+@media (min-width: 980px) {
+  .dashboard-container .grid-2 {
+    /* grid-template-columns: repeat(1, fit-content(250px) 2fr fit-content(386px)) / auto-flow; */
+    /* grid-template-columns: repeat(1, fit-content(250px) 1fr fit-content(386px)); */
+    /* grid-template-columns: repeat(
+      1,
+      minmax(0, 250px) minmax(0, 1fr) minmax(0, 380px)
+    ); */
+    display: grid;
+    grid-template-columns: repeat(1, fit-content(251px) 1fr);
+  }
+
+  /* Main Side styles */
+  .dashboard-container .main-side .inner-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr fit-content(386px));
+    gap: 1.2rem;
+    /* display: flex;
+    flex-flow: row wrap;
+    gap: 2%; */
+  }
+  .dashboard-container .main-side .inner-grid-2 > * {
+    /* margin-bottom: 1.5rem; */
+  }
+  .dashboard-container .main-side .inner-grid-2 > *:first-child {
+    /* flex-basis: 72%; */
+  }
+  .dashboard-container .main-side .inner-grid-2 > *:last-child {
+    /* flex-basis: 24%; */
+  }
+
+  /* Main side -- Overview */
+  .main-side .overview .flex-5 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4%;
+    align-items: center;
+  }
+  .main-side .overview .flex-5 > * {
+    flex-basis: 48%;
+  }
+  .main-side .overview .flex-5 > *:first-child {
+    order: 2;
+  }
+  .main-side .overview .flex-5 > *:nth-child(2) {
+    /* order: 1; */
+    flex-basis: 100%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(3) {
+    order: 3;
+  }
+  .main-side .overview .flex-5 > *:nth-child(4) {
+    order: 4;
+    flex-basis: 100%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(5) {
+    order: 5;
+    flex-basis: 100%;
+  }
+
+  /* ---------------Right side styles---------------- */
+  /* ===================================
+   Profile Card Styles
+  =========================================*/
+  .profile-card .top-section {
+    /* border: 1px solid red; */
+  }
+  .profile-card .top-section .flex-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: 339px;
+    position: relative;
+    margin-left: auto;
+  }
+
+  .profile-card .top-section .flex-2 > :first-child {
+    flex-basis: 130px;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(-0%, -50%);
+  }
+  .profile-card .top-section .flex-2 > :first-child .img-container {
+    display: block;
+  }
+
+  /* .profile-card .top-section .flex-2 > :last-child {
+    flex-basis: 92%;
+    margin-left: auto;
+    height: 147px;
+    display: flex;
+  } */
+  .profile-card .top-section .flex-2 > :last-child {
+    flex-basis: 274px;
+    margin-left: auto;
+    height: 147px;
+    display: flex;
+  }
+  /* .profile-card .top-section .flex-2 > :last-child > * {
+    flex-basis: 48%;
+    margin-left: 4.5rem;
+  } */
+  .profile-card .top-section .flex-2 > :last-child > * {
+    flex-basis: 72%;
+    margin-left: auto;
+  }
+
+  .profile-card .top-section > * {
+    /*Something can goes Here*/
+  }
+
+  .trading-leaderboard .table-container {
+    max-width: 420px;
+  }
+}
+
+/* =================================
+Desktop Device || Large
+====================================*/
+@media (min-width: 1200px) {
+  .dashboard-container .main-view .left-side {
+    /* overflow: auto;
+    height: auto; */
+  }
+  .dashboard-container .main-side .inner-grid-2 {
+    grid-template-columns: repeat(1, 1fr fit-content(386px));
+  }
+  .main-side .overview .flex-5 > * {
+    flex-basis: 22%;
+  }
+  .main-side .overview .flex-5 > *:first-child {
+    order: 1;
+  }
+  .main-side .overview .flex-5 > *:nth-child(2) {
+    order: 2;
+    flex-basis: 72%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(3) {
+    order: 3;
+    flex-basis: 32%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(4) {
+    order: 4;
+    flex-basis: 64%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(5) {
+    order: 5;
+    flex-basis: 100%;
+  }
+
+  /* -----leaderboard styles */
+
+  .trading-leaderboard .table-container {
+    /* overflow: hidden; */
+    max-width: 620px;
+  }
+  .trading-leaderboard .table-element {
+    /* width: 100%; */
+  }
+}
+
+/* =====================================
+ Desktop Screen  || X-Large 
+========================================*/
+@media (min-width: 1440px) {
+  .dashboard-container {
+    border: 1px solid red;
+  }
+
+  .main-side .overview .flex-5 > * {
+    flex-basis: 22%;
+  }
+  .main-side .overview .flex-5 > *:first-child {
+    order: 1;
+  }
+  .main-side .overview .flex-5 > *:nth-child(2) {
+    order: 2;
+    flex-basis: 48%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(3) {
+    order: 3;
+    flex-basis: 22%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(4) {
+    order: 4;
+    flex-basis: 48%;
+  }
+  .main-side .overview .flex-5 > *:nth-child(5) {
+    order: 5;
+    flex-basis: 48%;
+  }
+  .trading-leaderboard .table-container {
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .trading-leaderboard .table-element {
+    width: 100%;
+  }
+}
