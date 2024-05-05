@@ -1,7 +1,6 @@
 /* ==============Header Styles goes Here=========== */
 .header-section {
   /* padding: 1rem; */
-  border: 1px solid red;
   padding: 1rem 5%;
 }
 
@@ -43,7 +42,6 @@
 
 /* ===============Menu  Styles============= */
 .navbar-container .nav-menu {
-  border: 1px solid green;
   position: absolute;
   top: 100%;
   left: 0;

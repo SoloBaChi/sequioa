@@ -146,6 +146,9 @@ SIDE BAR MENU Styles
 }
 
 /* Main side -- Overview */
+.dashboard-container .main-side .inner-grid-2 > * {
+  margin-bottom: 2.5rem;
+}
 .main-side .overview .flex-5-container {
   /* border: 1px solid red; */
   /* max-width: 740px;
@@ -330,13 +333,15 @@ SIDE BAR MENU Styles
   /* border: 1px solid red; */
   border-collapse: collapse;
 }
+.profile-card-container::-webkit-scrollbar,
 .trading-leaderboard .table-container::-webkit-scrollbar {
   background: transparent;
   border-radius: 6px;
   width: 10px;
   height: 6px;
 }
-.trading-leaderboard .table-container::-webkit-scrollbar {
+.profile-card-container::-webkit-scrollbar-thumb,
+.trading-leaderboard .table-container::-webkit-scrollbar-thumb {
   background: #b5b5b5;
   border-radius: 2px;
 }
@@ -380,12 +385,17 @@ SIDE BAR MENU Styles
 /* =====================================
  Profile Card
 ========================================*/
+.profile-card-container {
+  max-width: 360px;
+  overflow: auto;
+  margin-bottom: 1.5rem;
+}
 .profile-card {
   padding: 1.5rem;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 2px 13.86px 0px #0000000a;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   width: 386px;
 }
 .profile-card .middle-section button {
@@ -538,6 +548,18 @@ SIDE BAR MENU Styles
 .dashboard-container .grid-item .section-two .img-container {
   width: 214px;
   display: inline-block;
+}
+
+/* ========================
+Tablet Device
+===========================*/
+@media (min-width: 710px) {
+  .profile-card-container {
+    max-width: 100%;
+  }
+  .profile-card {
+    width: auto;
+  }
 }
 
 /* =================================
