@@ -233,7 +233,7 @@ function MainMenu(props) {
         </div>
       </div>
       <div className="grid-item">
-        <div className="section-one">
+        <div className="section-one profile-card-container">
           <ProfileCard />
         </div>
         <div className="section-two">

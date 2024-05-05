@@ -1,22 +1,21 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import SideMenu from "./SideMenu";
-// import MainMenu from "./MainMenu";
-import TradingLeaderBoard from "./TradingLeaderBoard";
-import ProfileCard from "./ProfileCard";
-import Referral from "./Referral";
-import Search from "./Search";
-// import Overview from "./Overview";
-import Account from "./Account";
-import TotalBalance from "./TotalBalance";
-import TradingAccount from "./TradingAccount";
-import TradingPortfolio from "./TradingPortfolio";
-import TradeSummary from "./TradeSummary";
+import SideMenu from "../../SideMenu";
+import TradingLeaderBoard from "../../TradingLeaderBoard";
+import ProfileCard from "../../ProfileCard";
+import Search from "../../Search";
+import Account from "../../Account";
+import TradingAccount from "../../TradingAccount";
+import CopyTradingPortfolio from "./CopyTradingPortfolio";
+import TradeSummary from "../../TradeSummary";
+import TotalMangedAmount from "./TotalMangedAmount";
+import TradingStrategy from "./TradingStrategy";
 
-function DashboardHome(props) {
+function CopyTrader(props) {
   return (
-    <div className="dashboard-container">
+    <div
+      className="dashboard-container copy-tader-dashboard"
+      id="copy-trader-dashboard"
+    >
       <div className="container-item">{/* <Header /> */}</div>
       <div className="main-view">
         <div className="grid-2">
@@ -25,6 +24,14 @@ function DashboardHome(props) {
           </div>
           <div className="main-side">
             <div className="inner-grid-2">
+              <div className="grid-item">
+                <div className="section-one profile-card-container">
+                  <ProfileCard goback="/dashboard/copytrading" />
+                </div>
+                <div className="trading-strategy-container">
+                  <TradingStrategy />
+                </div>
+              </div>
               <div className="grid-item">
                 <div className="search-menu">
                   <Search />
@@ -37,13 +44,13 @@ function DashboardHome(props) {
                         <Account />
                       </div>
                       <div className="flex-item">
-                        <TotalBalance />
+                        <TotalMangedAmount />
                       </div>
                       <div className="flex-item">
                         <TradingAccount />
                       </div>
                       <div className="flex-item">
-                        <TradingPortfolio />
+                        {/* <TradingPortfolio /> */}
                       </div>
                       <div className="flex-item">
                         <TradeSummary />
@@ -52,17 +59,12 @@ function DashboardHome(props) {
                   </div>
                 </div>
                 <div className="leaderboard-container">
-                  <TradingLeaderBoard />
+                  {/* <TradingLeaderBoard /> */}
                 </div>
               </div>
-              <div className="grid-item">
-                <div className="section-one profile-card-container">
-                  <ProfileCard goback="/dashboard" />
-                </div>
-                <div className="section-two">
-                  <Referral />
-                </div>
-              </div>
+            </div>
+            <div className="trading-portfolio-container">
+              <CopyTradingPortfolio />
             </div>
           </div>
         </div>
@@ -72,4 +74,4 @@ function DashboardHome(props) {
   );
 }
 
-export default DashboardHome;
+export default CopyTrader;

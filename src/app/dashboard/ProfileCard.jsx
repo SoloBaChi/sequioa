@@ -7,7 +7,7 @@ import FacebookIcon from "../components/icons/FacebookIcon";
 import ShareIcon from "../components/icons/ShareIcon";
 import Link from "next/link";
 
-function ProfileCard(props) {
+function ProfileCard({ goback }) {
   return (
     <figure className="profile-card">
       <div className="top-section">
@@ -134,7 +134,7 @@ function ProfileCard(props) {
       </div>
       <div className="bottom-section">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex-item flex gap-2">
+          <Link href={goback} className="flex-item flex gap-2">
             <BackArrow />
             <h5 className="font-bold">back</h5>
           </Link>

@@ -2,12 +2,18 @@
 .copytrading .trading-cards .grid-item > a {
   padding: 0;
 }
-.copytrading .trading-cards .grid-container {
-  display: flex;
-  gap: 4%;
-  flex-flow: row wrap;
-  align-items: center;
-}
-.copytrading .trading-cards .grid-container > * {
-  flex-basis: 48%;
+
+/* ===============================
+ For Tablet Devices and Above
+===================================*/
+@media (min-width: 780px) {
+  .copytrading .trading-cards .grid-container {
+    display: flex;
+    gap: 4%;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  .copytrading .trading-cards .grid-container > * {
+    flex-basis: 48%;
+  }
 }

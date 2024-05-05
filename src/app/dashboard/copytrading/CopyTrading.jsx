@@ -20,48 +20,75 @@ function CopyTrading(props) {
             <div className="trading-cards">
               <div className="grid-container">
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
                 <div className="grid-item">
-                  <Link href="/dashboard/copytrading/userid">
-                    <ProfileCard />
+                  <Link
+                    className="profile-card-container"
+                    href="/dashboard/copytrading/copytrader"
+                  >
+                    <ProfileCard goback="/dashboard" />
                   </Link>
                 </div>
               </div>

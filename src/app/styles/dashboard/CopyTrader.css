@@ -1,0 +1,122 @@
+/*
+===============================================================
+ This styles is used specifically for the copy trader Dashboard 
+===============================================================
+ */
+#copy-trader-dashboard .total-balance button {
+  background: #225775;
+  color: #fff;
+  width: 100%;
+}
+
+#copy-trader-dashboard .trading-strategy-container {
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.trading-strategy .sec-2 .box {
+  height: 65px;
+  background: rgba(34, 87, 117, 0.05);
+  text-align: right;
+  padding: 1rem;
+}
+.trading-strategy h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.trading-strategy .sec-2 .box h5,
+.trading-strategy .sec-1 h3 {
+  font-weight: 600;
+  font-size: 0.6875rem;
+  text-transform: capitalize;
+  color: rgba(34, 87, 117, 1);
+}
+.trading-strategy .trade-info {
+  padding: 0.5rem;
+}
+.trading-strategy p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.trading-strategy .trade-info + .trade-info {
+  border-top: 4px solid #2257750d;
+  margin-top: 0.2rem;
+}
+.trading-strategy .flex-container-2 {
+  /* border: 1px solid red; */
+}
+.trading-strategy .flex-container-2 > * {
+  /* border: 1px solid teal; */
+}
+.trading-strategy .doughnut-chart-container {
+  position: relative;
+}
+.trading-strategy .doughnut-chart-container::before {
+  position: absolute;
+  content: "win rate";
+  display: inline-block;
+  top: 65%;
+  left: 48%;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #225775;
+  transform: translate(-50%, -50%);
+}
+#copy-trader-dashboard .table-container {
+  padding: 1rem;
+}
+#copy-trader-dashboard .table-container h4 {
+  font-size: 1.12rem;
+}
+#copy-trader-dashboard .table-container > .flex-container-2 {
+  font-size: 1.12rem;
+  justify-content: space-between;
+}
+#copy-trader-dashboard .table-container .loss {
+  color: #e2413b;
+}
+
+/* ====================================
+  Desktop Device
+=======================================*/
+@media (min-width: 980px) {
+  /* Main Side styles */
+  #copy-trader-dashboard .main-side .inner-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, fit-content(386px) 1fr);
+    gap: 1.2rem;
+  }
+  #copy-trader-dashboard .main-side .inner-grid-2 > * {
+  }
+  #copy-trader-dashboard .main-side .inner-grid-2 > :first-child {
+    /* order: 2; */
+  }
+  #copy-trader-dashboard .main-side .inner-grid-2 > :last-child {
+    /* order: 1; */
+  }
+  #copy-trader-dashboard .table-container {
+    max-width: 820px;
+  }
+  #copy-trader-dashboard
+    .table-container
+    > .flex-container-2
+    > :last-child
+    > * {
+    margin-left: auto;
+  }
+  #copy-trader-dashboard .table-element {
+    /* width: 100%; */
+  }
+}
+
+/* ====================================
+ Large Desktop Device
+=======================================*/
+@media (min-width: 1200px) {
+  #copy-trader-dashboard .main-side .inner-grid-2 {
+    grid-template-columns: repeat(1, fit-content(386px) 1fr);
+  }
+}
