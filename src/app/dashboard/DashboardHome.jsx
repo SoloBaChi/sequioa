@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import SideMenu from "./SideMenu";
@@ -13,15 +14,22 @@ import TotalBalance from "./TotalBalance";
 import TradingAccount from "./TradingAccount";
 import TradingPortfolio from "./TradingPortfolio";
 import TradeSummary from "./TradeSummary";
+import DashboardHeader from "./header/DashboardHeader";
 
 function DashboardHome(props) {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const handleShowSidebar = () => {
+    setShowSidebar((prev) => !prev);
+  };
   return (
     <div className="dashboard-container">
-      <div className="container-item">{/* <Header /> */}</div>
+      <div className="header-item">
+        <DashboardHeader handleShowSidebar={handleShowSidebar} />
+      </div>
       <div className="main-view">
         <div className="grid-2">
-          <div className="side-menu">
-            <SideMenu />
+          <div className={showSidebar ? "side-menu active" : "side-menu"}>
+            <SideMenu handleShowSidebar={handleShowSidebar} />
           </div>
           <div className="main-side">
             <div className="inner-grid-2">

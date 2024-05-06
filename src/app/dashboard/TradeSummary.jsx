@@ -31,7 +31,7 @@ function TradeSummary(props) {
               <h6>johnFunded</h6>
             </div>
             <div className="flex-item">
-              <div className="grid grid-cols-7 gap-1">
+              <div className="grid grid-cols-7 gap-2">
                 <figure className="box bg-[#ffbdbd]"></figure>
                 <figure className="box bg-[#a8f5b9]"></figure>
                 <figure className="box bg-[#a8f5b9]"></figure>

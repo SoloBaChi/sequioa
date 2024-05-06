@@ -28,10 +28,10 @@
   /* border: 1px solid red; */
   margin-bottom: 0;
 }
-.navbar-container .flex-container-2 > *:first-child {
+.navbar-container .logo-container {
   flex-basis: 172px;
 }
-.navbar-container .flex-container-2 > *:first-child a {
+.navbar-container .logo-container a {
   padding: 0;
 }
 .navbar-container .flex-container-2 > *:last-child {
@@ -48,7 +48,7 @@
   width: 100%;
   height: 100vh;
   background: #fff;
-  z-index: 1020;
+  z-index: 1040;
   /* display: none; */
 }
 .navbar-container .active {
@@ -88,13 +88,12 @@ Desktop Device
   }
   /* ===============Navbar  Styles============= */
 
-  .navbar-container .flex-container-2 > *:first-child {
+  .navbar-container .logo-container {
     flex-basis: 217px;
   }
 
   /* ===============Menu  Styles============= */
   .navbar-container .nav-menu {
-    border: 1px solid green;
     position: static;
     top: auto;
     left: auto;
@@ -124,7 +123,7 @@ Large Device
   /* ==============Header Styles goes Here=========== */
 
   /* ===============Navbar  Styles============= */
-  .navbar-container .flex-container-2 > *:first-child {
+  .navbar-container .logo-container {
     flex-basis: 272px;
   }
 

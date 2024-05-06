@@ -3,6 +3,14 @@
 /* ====================
  General Styles
 ========================*/
+
+/* ==========================
+Mobile Design
+=============================
+ */
+.dashboard-container {
+}
+
 .dashboard-container {
   /* border: 1px solid red; */
 }
@@ -47,11 +55,17 @@
 SIDE BAR MENU Styles 
 =========================*/
 .dashboard-container .side-menu {
-  /* border: 1px solid purple; */
   background: hsl(202, 100%, 8%);
   color: #fff;
   overflow: auto;
-  /* height: 100vh; */
+  height: 100vh;
+  position: absolute;
+  z-index: 1010;
+  transform: translateX(-150%);
+}
+.dashboard-container .side-menu.active {
+  transform: translateX(0%);
+  transition: 0.5s ease;
 }
 .side-menu::-webkit-scrollbar {
   height: 5px;
@@ -103,6 +117,13 @@ SIDE BAR MENU Styles
 }
 
 /* CENTER || main meu contents Styles */
+.dashboard-container .main-view {
+  position: relative;
+  z-index: 998;
+}
+.dashboard-container .main-view .grid-2 {
+  /* border: 2px solid red; */
+}
 .dashboard-container .main-view .main-side {
   background: #e3eaef;
   padding: 1.4rem;
@@ -209,7 +230,7 @@ SIDE BAR MENU Styles
   gap: 2%; */
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 .main-side .overview .total-balance button {
@@ -560,12 +581,20 @@ Tablet Device
   .profile-card {
     width: auto;
   }
+  .main-side .overview .total-balance .cta-btn-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* =================================
 Desktop Device
 ====================================*/
 @media (min-width: 980px) {
+  .dashboard-container .side-menu {
+    position: relative;
+    transform: translateX(0);
+    transition: 0.5s ease;
+  }
   .dashboard-container .grid-2 {
     /* grid-template-columns: repeat(1, fit-content(250px) 2fr fit-content(386px)) / auto-flow; */
     /* grid-template-columns: repeat(1, fit-content(250px) 1fr fit-content(386px)); */
@@ -577,6 +606,9 @@ Desktop Device
     grid-template-columns: repeat(1, fit-content(251px) 1fr);
   }
 
+  .dashboard-container .side-menu {
+    height: auto;
+  }
   /* Main Side styles */
   .dashboard-container .main-side .inner-grid-2 {
     display: grid;
