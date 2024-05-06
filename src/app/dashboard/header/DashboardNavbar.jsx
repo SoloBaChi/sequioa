@@ -1,17 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import Menu from "./Menu";
-import MenuBarIcon from "../icons/MenuBarIcon";
+import MenuBarIcon from "@/app/components/icons/MenuBarIcon";
 import Link from "next/link";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import DashboardMenu from "./DashboardMenu";
 
-function NavBar(props) {
+function DashboardNavBar({ handleShowSidebar }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const handleToggleMenu = () => {
     setToggleMenu((prev) => !prev);
   };
   return (
-    <div className="navbar-container">
+    <div className="dashboard navbar-container">
       <div className="flex-container-2">
+        <div className="flex-item ri-menu-icon" onClick={handleShowSidebar}>
+          <RiMenu3Line />
+        </div>
         <div className="flex-item logo-container">
           <Link href="/" className="img-container">
             <img src={`/assets/sequioa-logo.svg`} alt="logo" />
@@ -25,7 +29,7 @@ function NavBar(props) {
             className={toggleMenu ? "nav-menu" : "active"}
             onClick={handleToggleMenu}
           >
-            <Menu />
+            <DashboardMenu />
           </div>
         </div>
       </div>
@@ -33,4 +37,4 @@ function NavBar(props) {
   );
 }
 
-export default NavBar;
+export default DashboardNavBar;

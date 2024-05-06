@@ -6,6 +6,7 @@
 @import url("Auth.css");
 
 /*=========== Dashboard Imported Style ===========*/
+@import url("dashboard/DashboardHeader.css");
 @import url("dashboard/DashboardHome.css");
 @import url("dashboard/Progressbar.css");
 @import url("dashboard/LeaderBoard.css");

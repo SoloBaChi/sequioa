@@ -1,0 +1,72 @@
+/* 
+---Modified ----
+Dashboard header goes here 
+---------------------------
+*/
+.dashboard-container .header-item {
+  /* border: 2px solid yellow; */
+}
+.dashboard.navbar-container .flex-container-2 {
+  position: static;
+  /* justify-content: flex-start; */
+  gap: 4%;
+}
+.dashboard.navbar-container .flex-container-2 > * {
+  /* border: 1px solid red; */
+  margin-bottom: 0;
+  /* flex-basis: ; */
+}
+.dashboard.navbar-container .flex-container-2 > *:first-child {
+  flex-basis: auto;
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 2rem;
+  cursor: pointer;
+  flex-basis: 22%;
+  color: #225775;
+}
+.dashboard.navbar-container .flex-container-2 > :nth-child(2) {
+  /* border: 1px solid pink; */
+  /* flex-basis: 48%; */
+}
+.dashboard.navbar-container .flex-container-2 > *:last-child {
+  margin-left: 0;
+
+  /* position: relative; */
+  flex-basis: 22%;
+  text-align: right;
+}
+
+/* ===============Menu  Styles============= */
+.dashboard.navbar-container .nav-menu {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1020;
+  /* display: none; */
+}
+
+/* =================================
+ Tablet Deveice
+=====================================*/
+@media (min-width: 710px) {
+  .dashboard.navbar-container {
+  }
+}
+/* =================================
+ Desktop Deveice
+=====================================*/
+@media (min-width: 980px) {
+  .dashboard.navbar-container .flex-container-2 > *:first-child {
+    display: none;
+  }
+  .dashboard.navbar-container .flex-container-2 > *:last-child {
+    flex-basis: auto;
+  }
+}
+/* =================================
+ Large Desktop Deveice
+=====================================*/

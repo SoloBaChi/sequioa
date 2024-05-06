@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import SideMenu from "../../SideMenu";
 import TradingLeaderBoard from "../../TradingLeaderBoard";
 import ProfileCard from "../../ProfileCard";
@@ -9,17 +10,24 @@ import CopyTradingPortfolio from "./CopyTradingPortfolio";
 import TradeSummary from "../../TradeSummary";
 import TotalMangedAmount from "./TotalMangedAmount";
 import TradingStrategy from "./TradingStrategy";
+import DashboardHeader from "../../header/DashboardHeader";
 
 function CopyTrader(props) {
+  const [showSidebar, setShowSidebar] = useState(false);
+  const handleShowSidebar = () => {
+    setShowSidebar((prev) => !prev);
+  };
   return (
     <div
       className="dashboard-container copy-tader-dashboard"
       id="copy-trader-dashboard"
     >
-      <div className="container-item">{/* <Header /> */}</div>
+      <div className="header-item">
+        <DashboardHeader handleShowSidebar={handleShowSidebar} />
+      </div>
       <div className="main-view">
         <div className="grid-2">
-          <div className="side-menu">
+          <div className={showSidebar ? "side-menu active" : "side-menu"}>
             <SideMenu />
           </div>
           <div className="main-side">
