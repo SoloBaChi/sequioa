@@ -1,7 +1,12 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 
-function SuccessRegister({ email, token }) {
+function SuccessRegister(props) {
+  const searchParams = useSearchParams();
+  const email = searchParams.get("email");
+  // const token = searchParams.get("token");
   return (
     <section className="success-register">
       <div className="card-container">
