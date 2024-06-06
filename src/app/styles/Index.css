@@ -4,6 +4,7 @@
 @import url("Footer.css");
 @import url("Home.css");
 @import url("Auth.css");
+@import url("SuccessRegister.css");
 
 /*=========== Dashboard Imported Style ===========*/
 @import url("dashboard/DashboardHeader.css");
