@@ -2,7 +2,6 @@ import Link from "next/link";
 import React from "react";
 
 function SuccessRegister({ email, token }) {
-  console.log(token);
   return (
     <section className="success-register">
       <div className="card-container">

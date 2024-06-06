@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Footer from "../components/footer/Footer";
 import SuccessRegister from "./SuccessRegister";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -10,8 +10,10 @@ function Activate(props) {
   const token = searchParams.get("token");
   return (
     <>
-      <SuccessRegister token={token} email={email} />
-      <Footer />
+      <Suspense>
+        <SuccessRegister token={token} email={email} />
+        <Footer />
+      </Suspense>
     </>
   );
 }
