@@ -1,0 +1,34 @@
+/* Sucesss Register Styles */
+.card-container {
+  display: flex;
+}
+.success-reg-card {
+  text-align: center;
+  box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.25);
+  padding: 1rem;
+  margin: auto;
+}
+.success-register .img-container,
+.success-register a {
+  display: inline-block;
+}
+.success-register h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.success-register a {
+  color: #3a8d97;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.success-register .img-container {
+  margin-bottom: 1rem;
+}
+
+/* media queries */
+@media (min-width: 980px) {
+  /* .success-reg-card {
+    width: 560px;
+  } */
+}

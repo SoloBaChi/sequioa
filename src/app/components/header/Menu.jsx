@@ -9,10 +9,10 @@ function Menu(props) {
           <Link href="#">about us</Link>
         </li>
         <li>
-          <Link href="#">become a trader</Link>
+          <Link href="/register">become a trader</Link>
         </li>
         <li>
-          <Link href="#">become an investor</Link>
+          <Link href="/register">become an investor</Link>
         </li>
         <li>
           <Link href="/login">login</Link>
