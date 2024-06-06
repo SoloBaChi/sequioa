@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Footer from "../components/footer/Footer";
 import SuccessRegister from "./SuccessRegister";
 
 function Activate(props) {
   return (
     <>
-      <SuccessRegister />
+      <Suspense fallback={<div>Loading...</div>}>
+        <SuccessRegister />
+      </Suspense>
       <Footer />
     </>
   );
