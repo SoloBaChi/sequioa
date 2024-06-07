@@ -16,10 +16,10 @@ function SuccessRegister(props) {
     const url = `https://sequioa-api.vercel.app/activate?email=${email}&token=${token}`;
     const res = await fetch(url);
     const resObj = await res.json();
-    setStatus(resObj);
+    setStatus(resObj.status);
   };
-
   // const token = searchParams.get("token");
+
   return (
     <section className="success-register">
       {status === "success" ? (
@@ -39,7 +39,21 @@ function SuccessRegister(props) {
             </div>
           </figure>
         </div>
-      ) : null}
+      ) : (
+        <div className="card-container">
+          <figure className="success-reg-card">
+            <div className="contents">
+              <h3 style={{ color: "red" }}>Invalid Activation Token !</h3>
+              <p>
+                Your account {email.replace(/^"(.*)"$/, "($1)")} has been
+                already activated <br />
+                Please kindly click on <Link href="/login">Login</Link> to
+                continue trading
+              </p>
+            </div>
+          </figure>
+        </div>
+      )}
     </section>
   );
 }
