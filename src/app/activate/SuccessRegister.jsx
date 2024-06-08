@@ -39,7 +39,7 @@ function SuccessRegister(props) {
             </div>
           </figure>
         </div>
-      ) : (
+      ) : status === "error" ? (
         <div className="card-container">
           <figure className="success-reg-card">
             <div className="contents">
@@ -51,6 +51,12 @@ function SuccessRegister(props) {
                 continue trading
               </p>
             </div>
+          </figure>
+        </div>
+      ) : (
+        <div className="card-container">
+          <figure className="success-reg-card">
+            <p>Loading...</p>
           </figure>
         </div>
       )}
