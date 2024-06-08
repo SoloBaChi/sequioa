@@ -66,7 +66,7 @@ function SignUp(props) {
       if (status === "error") {
         toast.error(message.toLowerCase());
       } else {
-        toast.success(message.toUpperCase());
+        toast.success(message.toLowerCase());
       }
 
       // use toastify for notification
