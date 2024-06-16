@@ -5,8 +5,11 @@ import Footer from "../components/footer/Footer";
 import useFetch from "../hooks/useFetch";
 import Link from "next/link";
 
+// Get the token from the local storage
+const authToken = localStorage.getItem("auth-token");
+
 function Dashboard(props) {
-  const authToken = localStorage.getItem("auth-token");
+
   const [{ isLoading, apiData, serverError }] = useFetch(`${authToken}`);
 
   const userData = apiData?.data;
