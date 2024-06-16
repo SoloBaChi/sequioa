@@ -20,7 +20,6 @@ function SignUp(props) {
     confirmPassword: "",
   });
   const [loading, setLoading] = useState(false);
-  // const [message, setMessage] = useState("");
   const [statusObj, setStatusObj] = useState("");
 
   // Handle change
@@ -164,12 +163,7 @@ function SignUp(props) {
               <EyeIcon />
             </div>
           </div>
-          {/* <div className="form-field checkbox">
-            <label htmlFor="checkbox">
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              keep me logged in
-            </label>
-          </div> */}
+
           <div className="form-field">
             <div className="cta-btn-container toast-container">
               <button className="submit-btn text-[1rem] xl:text-[1.125rem]">
@@ -191,13 +185,13 @@ function SignUp(props) {
               <ToastContainer />
             </div>
           </div>
-          <div className="form-field">
+          {/* <div className="form-field">
             <div className="cta-btn-container">
               <button className="google-btn text-[1rem] xl:text-[1.125rem]">
                 <span>Sign Up with Google</span>
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="form-field inner-flex">
             <p>
               Already have an account{" "}
