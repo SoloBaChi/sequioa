@@ -40,22 +40,22 @@ function MainContents(props) {
       <div className="countup-animation">
         <section>
           <div className="grid-container-3">
-            <div class="grid-item">
+            <div className="grid-item">
               <h3>
-                <span class="counter-timer">870</span>
+                <span className="counter-timer">870</span>
                 k+
               </h3>
               <p>investors</p>
             </div>
-            <div class="grid-item">
+            <div className="grid-item">
               <h3>
                 <span class="counter-timer">3.7</span>m +
               </h3>
               <p>invested</p>
             </div>
-            <div class="grid-item">
+            <div className="grid-item">
               <h3>
-                <span class="counter-timer">870</span>
+                <span className="counter-timer">870</span>
                 k+
               </h3>
               <p>invested</p>
