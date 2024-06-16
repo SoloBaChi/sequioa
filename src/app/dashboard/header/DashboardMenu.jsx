@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-function DashboardMenu(props) {
+function DashboardMenu({ logoutUser }) {
   return (
     <div className="dashboard menu-container">
       <ul className="list-menu">
@@ -14,12 +14,18 @@ function DashboardMenu(props) {
         <li>
           <Link href="#">become an investor</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/login">login</Link>
-        </li>
+        </li> */}
         <li className="text-center">
-          <Link href="/register" className="get-started">
-            get started
+          <Link
+            onClick={() => {
+              logoutUser();
+            }}
+            href="/login"
+            className="get-started"
+          >
+            log out
           </Link>
         </li>
       </ul>

@@ -16,20 +16,30 @@ import TradingPortfolio from "./TradingPortfolio";
 import TradeSummary from "./TradeSummary";
 import DashboardHeader from "./header/DashboardHeader";
 
-function DashboardHome(props) {
+function DashboardHome({ userData }) {
   const [showSidebar, setShowSidebar] = useState(false);
   const handleShowSidebar = () => {
     setShowSidebar((prev) => !prev);
   };
+  const logoutUser = () => {
+    localStorage.removeItem("auth-token");
+  };
   return (
     <div className="dashboard-container">
       <div className="header-item">
-        <DashboardHeader handleShowSidebar={handleShowSidebar} />
+        <DashboardHeader
+          handleShowSidebar={handleShowSidebar}
+          logoutUser={logoutUser}
+        />
       </div>
       <div className="main-view">
         <div className="grid-2">
           <div className={showSidebar ? "side-menu active" : "side-menu"}>
-            <SideMenu handleShowSidebar={handleShowSidebar} />
+            <SideMenu
+              handleShowSidebar={handleShowSidebar}
+              userData={userData}
+              logoutUser={logoutUser}
+            />
           </div>
           <div className="main-side">
             <div className="inner-grid-2">
@@ -65,7 +75,7 @@ function DashboardHome(props) {
               </div>
               <div className="grid-item">
                 <div className="section-one profile-card-container">
-                  <ProfileCard goback="/dashboard" />
+                  <ProfileCard goback="/dashboard" userData={userData} />
                 </div>
                 <div className="section-two">
                   <Referral />

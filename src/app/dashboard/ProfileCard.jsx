@@ -7,7 +7,7 @@ import FacebookIcon from "../components/icons/FacebookIcon";
 import ShareIcon from "../components/icons/ShareIcon";
 import Link from "next/link";
 
-function ProfileCard({ goback }) {
+function ProfileCard({ goback, userData }) {
   return (
     <figure className="profile-card">
       <div className="top-section">
@@ -29,7 +29,7 @@ function ProfileCard({ goback }) {
                   </div>
                 </div>
                 <div className="flex-item">
-                  <h3>ChetaFx_001</h3>
+                  <h3>{userData?.lastName}</h3>
                 </div>
               </div>
               <p>

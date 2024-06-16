@@ -5,7 +5,7 @@ import Link from "next/link";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import DashboardMenu from "./DashboardMenu";
 
-function DashboardNavBar({ handleShowSidebar }) {
+function DashboardNavBar({ handleShowSidebar, logoutUser }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const handleToggleMenu = () => {
     setToggleMenu((prev) => !prev);
@@ -29,7 +29,7 @@ function DashboardNavBar({ handleShowSidebar }) {
             className={toggleMenu ? "nav-menu" : "active"}
             onClick={handleToggleMenu}
           >
-            <DashboardMenu />
+            <DashboardMenu logoutUser={logoutUser} />
           </div>
         </div>
       </div>

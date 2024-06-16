@@ -1,16 +1,18 @@
 import React from "react";
 import Link from "next/link";
+// import { useRouter } from "next/navigation";
 
-function SideMenu(props) {
+function SideMenu({ userData, logoutUser }) {
+  // const router = useRouter();
   return (
     <div className="side-menu-container">
       <h3>
-        welcome <strong>Cheta !</strong>
+        welcome <strong>{userData?.firstName}!</strong>
       </h3>
       <nav className="dashboard-side-menu">
         <ul className="list">
           <div className="top-section">
-            <li class="list-item">
+            <li className="list-item">
               <Link href="/dashboard" className="inner-flex-2 active">
                 <div className="img-icon">
                   <img
@@ -86,9 +88,9 @@ function SideMenu(props) {
             </li>
           </div>
           <div className="bottom-section">
-            <li class="list-item">
+            <li className="list-item">
               <Link href="#" className="inner-flex-2">
-                <div class="img-icon">
+                <div className="img-icon">
                   <img
                     src={`/dashboard/icons/settings-sidebar-icon.svg`}
                     alt="settings"
@@ -97,8 +99,14 @@ function SideMenu(props) {
                 <p>settings</p>
               </Link>
             </li>
-            <li class="list-item">
-              <Link href="#" className="inner-flex-2">
+            <li className="list-item">
+              <Link
+                onClick={() => {
+                  logoutUser();
+                }}
+                href="/login"
+                className="inner-flex-2"
+              >
                 <div class="img-icon">
                   <img
                     src={`/dashboard/icons/logout-sidebar-icon.svg`}
