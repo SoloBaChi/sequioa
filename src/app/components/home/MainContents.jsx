@@ -22,12 +22,18 @@ function MainContents(props) {
               <span className="text-[_#E9873b]">investors</span>{" "}
             </h2>
             <p className="text-[1rem] xl:text-[1.8rem] leading-[1.8rem]">
-              Lorem ipsum dolor sit amet consectetur. Sit ultrices faucibus eget
-              sagittis dictumst purus fames ultrices. Ultrices mauris venenatis
-              leo leo montes mollis risus feugiat pretium.
+              At SequoiaX, we are transforming the world of hedge funds, making
+              it accessible and transparent for high-net-worth individuals and
+              the general public alike. Rooted in Nigeria and driven by a team
+              of young industry professionals with over 25 years of combined
+              experience, we are here to revolutionize how you think about
+              investing.
               <br />
-              Tellus euismod amet t integer scelerisque.at integer scelerisque.t
-              integer scelerisque.
+              Our vision is to democratize the hedge fund industry, providing
+              unparalleled opportunities for both investors and traders. We aim
+              to bridge the gap between sophisticated financial tools and the
+              everyday investor, ensuring everyone can benefit from
+              expert-driven wealth growth.
             </p>
             <div className="cta-btn-container">
               <Link className="cta-btn" href="/register">
@@ -75,31 +81,29 @@ function MainContents(props) {
               <h4 className="text-[1.675rem] xl:text-[2rem]">
                 How to Become an investor
               </h4>
-              <p className="text-center">
-                How to earn from trading while you just sit and become wealthier
+              <p className="title">
+                As an investor, you can earn even with zero knowledge about the
+                financial market You can do this by:
               </p>
               <div className="list-container">
                 <ul className="list-items">
                   <li className="flex-container-2">
                     <span className="list">1</span>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                      arcu placerat.
-                    </p>
+                    <p>Create an account</p>
                   </li>
                   <li className="flex-container-2">
                     <span className="list">2</span>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                      arcu placerat.
-                    </p>
+                    <p>Fund your account</p>
                   </li>
                   <li className="flex-container-2">
                     <span className="list">3</span>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                      arcu placerat.
+                      From our array of traders, Select a trader to copy trade.
                     </p>
+                  </li>
+                  <li className="flex-container-2">
+                    <span className="list">4</span>
+                    <p>Earn from each trade the trader places.</p>
                   </li>
                 </ul>
               </div>

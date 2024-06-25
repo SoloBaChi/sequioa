@@ -204,6 +204,10 @@
   font-weight: 800;
   text-align: center;
 }
+.howto-section p.title {
+  text-align: initial;
+  padding: 0 2.5rem;
+}
 .howto-section > .flex-container-2 {
   /* align-items: flex-start; */
 }

@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import AvatarIcon from "../components/icons/AvatarIcon";
 import BackArrow from "../components/icons/BackArrow";
 import InstagramDashboardIcon from "../components/icons/InstagramDashboardIcon";
@@ -6,19 +8,57 @@ import TwitterIcon from "../components/icons/TwitterIcon";
 import FacebookIcon from "../components/icons/FacebookIcon";
 import ShareIcon from "../components/icons/ShareIcon";
 import Link from "next/link";
+import convertToBase64 from "./utils/convertToBase64";
 
 function ProfileCard({ goback, userData }) {
+  const [file, setFile] = useState();
+  const maxSize = 1 * 1024 * 1024;
+
+  const handleProfileUpload = async (e) => {
+    const selectedFile = e.target.files[0];
+
+    if (selectedFile) {
+      if (selectedFile.size > maxSize) {
+        toast.error("File size exceeds 1 MB");
+        setFile(null);
+      } else {
+        toast.success("Image Size can be uploaded");
+        // setFile(selectedFile);
+        try {
+          const base64 = await convertToBase64(selectedFile);
+          setFile(base64);
+        } catch (error) {
+          toast.error("Failed to convert image to Base64");
+        }
+      }
+    }
+  };
+  // console.log(file);
+
   return (
     <figure className="profile-card">
+      <Toaster position="top-center" reverseOrder={false}></Toaster>
+
       <div className="top-section">
         <div className="flex-2">
           <div className="flex-item">
-            <div className="img-container">
-              <img
-                src={`/dashboard/images/profile-img.svg`}
-                alt="user profile"
+            <form>
+              <label
+                htmlFor="profile"
+                className="img-container block cursor-pointer"
+              >
+                <img
+                  src={file || `/dashboard/images/profile-img.svg`}
+                  alt="user profile"
+                />
+              </label>
+              <input
+                onChange={handleProfileUpload}
+                className="hidden"
+                id="profile"
+                type="file"
               />
-            </div>
+            </form>
           </div>
           <div className="flex-item">
             <div className="text-wrapper">
@@ -32,12 +72,7 @@ function ProfileCard({ goback, userData }) {
                   <h3>{userData?.lastName}</h3>
                 </div>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eu commodo lacus sed
-                enim cras eu eu vulputate. Semper massa ut ut amet. Pharetra
-                purus quis ac duis sed consectetur molestie ipsum convallis.
-                Scelerisque facilisis feugiat neque pulvinar.
-              </p>
+              <p>Your Bio..Lets know more about you</p>
               <hr />
             </div>
           </div>
