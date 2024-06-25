@@ -13,34 +13,35 @@ function HowToEarn(props) {
           <h4 className="text-[2rem] xl:text-[2.5rem]">
             How to Earn as a Trader
           </h4>
+          <p className="text-[#fff]">
+            As a trader you can earn via trading with our affliated brokerage
+            and also earn from dividends of profit for those that copy your
+            trade. You can do so in 4 easy steps:
+          </p>
           <div className="list-container">
             <ul className="list-items">
               <li className="flex-container-2">
                 <span className="list">1</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                  arcu placerat.
-                </p>
+                <p>Create and verify your account.</p>
               </li>
               <li className="flex-container-2">
                 <span className="list">2</span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                  arcu placerat.
+                  Upload your trade strategy or create a trading account with
+                  our broker to establish your strategy our time.
                 </p>
               </li>
               <li className="flex-container-2">
                 <span className="list">3</span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                  arcu placerat.
+                  With our risk management algorithm, make profitable trades and
+                  earn.
                 </p>
               </li>
               <li className="flex-container-2">
                 <span className="list">4</span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur. Pharetra amet ante
-                  arcu placerat.
+                  You can also earn dividends from those that copy your traders.
                 </p>
               </li>
             </ul>

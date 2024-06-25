@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import { ThreeDots } from "react-loader-spinner";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import EyeIcon from "../components/icons/EyeIcon";
 import { useRouter } from "next/navigation";
 
@@ -84,6 +85,8 @@ function SignIn(props) {
   };
   return (
     <section className="auth-section">
+      <Toaster position="top-center" reverseOrder={false}></Toaster>
+
       <div className="form-container">
         <form onSubmit={handleSubmit} className="form-wrapper">
           <div className="header-contents">
@@ -152,7 +155,7 @@ function SignIn(props) {
                   "Sign In"
                 )}
               </button>
-              <ToastContainer />
+              {/* <ToastContainer /> */}
             </div>
           </div>
           {/* <div className="form-field">

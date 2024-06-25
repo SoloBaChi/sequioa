@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import { Toaster, toast } from "react-hot-toast";
 import Footer from "./components/footer/Footer";
 import HomePage from "./components/home/HomePage.jsx";
 import Header from "./components/header/Header";
