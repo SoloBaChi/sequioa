@@ -13,7 +13,7 @@ import convertToBase64 from "./utils/convertToBase64";
 function ProfileCard({ goback, userData, token }) {
   console.log(token);
   const [file, setFile] = useState();
-  const maxSize = 1 * 1024 * 1024;
+  const maxSize = 2 * 1024 * 1024;
 
   const handleProfileUpload = async (e) => {
     const selectedFile = e.target.files[0];
