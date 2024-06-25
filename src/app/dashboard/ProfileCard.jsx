@@ -10,7 +10,8 @@ import ShareIcon from "../components/icons/ShareIcon";
 import Link from "next/link";
 import convertToBase64 from "./utils/convertToBase64";
 
-function ProfileCard({ goback, userData }) {
+function ProfileCard({ goback, userData, token }) {
+  console.log(token);
   const [file, setFile] = useState();
   const maxSize = 1 * 1024 * 1024;
 
@@ -26,14 +27,31 @@ function ProfileCard({ goback, userData }) {
         // setFile(selectedFile);
         try {
           const base64 = await convertToBase64(selectedFile);
+
           setFile(base64);
+          const data = {
+            profile: base64,
+          };
+          const res = await fetch(
+            `https://sequioa-api.vercel.app/api/v1/updateuser`,
+            {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json",
+                authorization: `Bearer ${token}`,
+              },
+              body: JSON.stringify(data),
+            },
+          );
+          const resBody = await res.json();
+          toast.success(resBody.message);
+          console.log(resBody);
         } catch (error) {
           toast.error("Failed to convert image to Base64");
         }
       }
     }
   };
-  // console.log(file);
 
   return (
     <figure className="profile-card">
@@ -48,7 +66,11 @@ function ProfileCard({ goback, userData }) {
                 className="img-container block cursor-pointer"
               >
                 <img
-                  src={file || `/dashboard/images/profile-img.svg`}
+                  src={
+                    userData?.profile ||
+                    file ||
+                    `/dashboard/images/profile-img.svg`
+                  }
                   alt="user profile"
                 />
               </label>

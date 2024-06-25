@@ -16,7 +16,7 @@ import TradingPortfolio from "./TradingPortfolio";
 import TradeSummary from "./TradeSummary";
 import DashboardHeader from "./header/DashboardHeader";
 
-function DashboardHome({ userData }) {
+function DashboardHome({ userData, token }) {
   const [showSidebar, setShowSidebar] = useState(false);
   const handleShowSidebar = () => {
     setShowSidebar((prev) => !prev);
@@ -75,7 +75,11 @@ function DashboardHome({ userData }) {
               </div>
               <div className="grid-item">
                 <div className="section-one profile-card-container">
-                  <ProfileCard goback="/dashboard" userData={userData} />
+                  <ProfileCard
+                    token={token}
+                    goback="/dashboard"
+                    userData={userData}
+                  />
                 </div>
                 <div className="section-two">
                   <Referral />
