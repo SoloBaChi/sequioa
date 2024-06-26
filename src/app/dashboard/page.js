@@ -42,7 +42,7 @@ function Dashboard(props) {
 
   return (
     <>
-      <DashboardHome userData={userData} />
+      <DashboardHome userData={userData} token={authToken} />
       <Footer />
     </>
   );
