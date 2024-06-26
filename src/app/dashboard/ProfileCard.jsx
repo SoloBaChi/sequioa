@@ -24,7 +24,7 @@ function ProfileCard({ goback, userData, token }) {
         setFile(null);
       } else {
         toast.success("Image Size can be uploaded");
-        // setFile(selectedFile);
+        setFile(selectedFile);
         try {
           const base64 = await convertToBase64(selectedFile);
 
